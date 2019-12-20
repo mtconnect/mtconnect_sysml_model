@@ -1,0 +1,15 @@
+tocTab[tocTab.length] = new Array("0.5:1", "", "«ValueType» CDATA", "EARoot/EA5/EA398.html", "230.png", "E120", "0", "", "DataType0","{335DC5AB-64FC-453a-A76C-792A229A0A99}");
+tocTab[tocTab.length] = new Array("0.5:2", "", "«ValueType» Condition", "EARoot/EA5/EA399.html", "230.png", "E569", "0", "", "DataType0","{B29A5EA9-C689-42e5-AEFF-75B190B5F723}");
+tocTab[tocTab.length] = new Array("0.5:3", "", "«ValueType» dateTime", "EARoot/EA5/EA400.html", "230.png", "E117", "0", "", "DataType0","{69482B59-A50D-498d-8DAE-D18763176BC3}");
+tocTab[tocTab.length] = new Array("0.5:4", "", "«ValueType» ID", "EARoot/EA5/EA401.html", "230.png", "E135", "0", "", "DataType0","{03BAFB55-6DAC-400e-8814-A9FDE2D41236}");
+tocTab[tocTab.length] = new Array("0.5:5", "", "«ValueType» IDREF", "EARoot/EA5/EA402.html", "230.png", "E346", "0", "", "DataType0","{76D7C2F9-8A67-48f9-AC23-0D21703929DD}");
+tocTab[tocTab.length] = new Array("0.5:6", "", "«ValueType» integer", "EARoot/EA5/EA403.html", "230.png", "E118", "0", "", "DataType0","{D00C0612-7624-4167-BECC-E172B1A43382}");
+tocTab[tocTab.length] = new Array("0.5:7", "", "«ValueType» Message", "EARoot/EA5/EA404.html", "230.png", "E1289", "0", "", "DataType0","{D23BECEC-2ED9-4593-BAAC-2538316C3D72}");
+tocTab[tocTab.length] = new Array("0.5:8", "", "«ValueType» NMTOKEN", "EARoot/EA5/EA405.html", "230.png", "E136", "0", "", "DataType0","{4AB2A79C-7792-4966-9A44-A31B225ED6BE}");
+tocTab[tocTab.length] = new Array("0.5:9", "", "«ValueType» numeric", "EARoot/EA5/EA406.html", "230.png", "E386", "0", "", "DataType0","{858B92BC-9E6F-488f-8CE5-44C0AE75E7F6}");
+tocTab[tocTab.length] = new Array("0.5:10", "", "«ValueType» second", "EARoot/EA5/EA407.html", "230.png", "E588", "0", "", "DataType0","{711BF98B-466E-48ad-A570-6CDEA7AFE00B}");
+tocTab[tocTab.length] = new Array("0.5:11", "", "«ValueType» string", "EARoot/EA5/EA408.html", "230.png", "E119", "0", "", "DataType0","{6D828017-7647-4c59-9DE1-C1D4BFC2302E}");
+tocTab[tocTab.length] = new Array("0.5:12", "", "«ValueType» ThreeSpaceValue", "EARoot/EA5/EA409.html", "230.png", "E344", "0", "", "DataType0","{4EBA2200-D6F0-426f-8E20-22B9ECABEFBE}");
+tocTab[tocTab.length] = new Array("0.5:13", "", "«ValueType» xlinkhref", "EARoot/EA5/EA410.html", "230.png", "E473", "0", "", "DataType0","{688BC353-8CB2-4975-94A1-B6A57578102E}");
+tocTab[tocTab.length] = new Array("0.5:14", "", "«ValueType» xlinktype", "EARoot/EA5/EA411.html", "230.png", "E474", "0", "", "DataType0","{28FA6037-63F2-4cfb-B1C4-15EEB53DF7B8}");
+tocTab[tocTab.length] = new Array("0.5:15", "", "«ValueType» xslang", "EARoot/EA5/EA412.html", "230.png", "E600", "0", "", "DataType0","{0FDCEAC0-90F5-4437-AEBC-941362D7AE3D}");

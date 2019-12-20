@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.3.1.3:1", "", "Configuration", "EARoot/EA3/EA1/EA3/EA269.html", "175.png", "37", "0", "", "Logical diagram0","{DA28A084-6D75-4e7a-870F-9E835458B77E}");
+tocTab[tocTab.length] = new Array("0.3.1.3:2", "", "«block» Configuration", "EARoot/EA3/EA1/EA3/EA272.html", "5.png", "E268", "0", "", "Class0","{C04DCC77-16E8-4cef-92D4-B777AFC52570}");
+tocTab[tocTab.length] = new Array("0.3.1.3:3", "", "«block» CoordinateSystem", "EARoot/EA3/EA1/EA3/EA273.html", "5.png", "E275", "0", "", "Class0","{4897A425-4C32-4a13-BBA4-D13B72EAAA68}");
+tocTab[tocTab.length] = new Array("0.3.1.3:4", "", "«block» CoordinateSystems", "EARoot/EA3/EA1/EA3/EA274.html", "5.png", "E273", "0", "", "Class0","{9845F9D3-9EAD-4bed-AE48-7C3A68425607}");
+tocTab[tocTab.length] = new Array("0.3.1.3:5", "", "«block» Motion", "EARoot/EA3/EA1/EA3/EA275.html", "5.png", "E274", "0", "", "Class0","{22C80BCB-FB68-4aaa-A9D4-DCB719A367A7}");
+tocTab[tocTab.length] = new Array("0.3.1.3:6", "", "«block» Origin", "EARoot/EA3/EA1/EA3/EA276.html", "5.png", "E279", "0", "", "Class0","{ADED5A65-7516-4abc-9577-5766D6275655}");
+tocTab[tocTab.length] = new Array("0.3.1.3:7", "", "«block» Specifications", "EARoot/EA3/EA1/EA3/EA279.html", "5.png", "E272", "0", "", "Class0","{D6AB5775-DB6C-4ba3-91B4-A3566A3EB2A6}");
+tocTab[tocTab.length] = new Array("0.3.1.3:8", "", "«block» Transform", "EARoot/EA3/EA1/EA3/EA280.html", "5.png", "E280", "0", "", "Class0","{3883A5E1-014E-401c-8B48-284D8EEADA26}");
+tocTab[tocTab.length] = new Array("0.3.1.3.1", "1", "Relationships", "EARoot/EA3/EA1/EA3/EA1/EA283.html", "4.png", "", "", "{A055F7A8-3D2C-4a01-8D09-072F34E65044}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.3.2", "1", "SensorConfiguration", "EARoot/EA3/EA1/EA3/EA2/EA293.html", "4.png", "", "", "{2799F394-9540-4e1f-8171-D8E5BC08A63E}", "Package");

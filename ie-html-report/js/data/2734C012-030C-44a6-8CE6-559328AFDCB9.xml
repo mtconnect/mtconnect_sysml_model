@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("0.1.1.1:1", "", "CuttingItemModel", "EARoot/EA1/EA1/EA1/EA43.html", "175.png", "65", "0", "", "Logical diagram0","{3319B4AC-3ED2-44f7-84E3-B317E524AE36}");
+tocTab[tocTab.length] = new Array("0.1.1.1:2", "", "«block» CuttingItem", "EARoot/EA1/EA1/EA1/EA46.html", "5.png", "E646", "0", "", "Class0","{99183806-F570-4387-BA6D-34929C20F954}");
+tocTab[tocTab.length] = new Array("0.1.1.1:3", "", "«block» CuttingItems", "EARoot/EA1/EA1/EA1/EA48.html", "5.png", "E647", "0", "", "Class0","{657167D1-2EA5-4095-88EC-49E69674A734}");
+tocTab[tocTab.length] = new Array("0.1.1.1:4", "", "«block» ItemLife", "EARoot/EA1/EA1/EA1/EA49.html", "5.png", "E651", "0", "", "Class0","{CC4F8633-BAAC-47e8-9EFB-2BFC62215FC8}");
+tocTab[tocTab.length] = new Array("0.1.1.1:5", "", "«block» Measurement", "EARoot/EA1/EA1/EA1/EA50.html", "5.png", "E697", "0", "", "Class0","{3158353E-BF39-4da5-ACE2-446517F8CFF6}");
+tocTab[tocTab.length] = new Array("0.1.1.1:6", "", "hasCutterStatus", "EARoot/EA1/EA1/EA1/EA51.html", "118.png", "E669", "E646", "", "Part0","{5D353F16-0C2A-4e80-B9E6-EFA0B557C431}");
+tocTab[tocTab.length] = new Array("0.1.1.1:7", "", "hasItemLifeMinutes", "EARoot/EA1/EA1/EA1/EA52.html", "118.png", "E665", "E646", "", "Part0","{29BE4D05-41DD-4011-A523-01429D29184F}");
+tocTab[tocTab.length] = new Array("0.1.1.1:8", "", "hasItemLifePartCount", "EARoot/EA1/EA1/EA1/EA53.html", "118.png", "E663", "E646", "", "Part0","{4CFD82B7-780D-4bc5-BEE4-AF94DB3F4CBD}");
+tocTab[tocTab.length] = new Array("0.1.1.1:9", "", "hasItemLifeWear", "EARoot/EA1/EA1/EA1/EA54.html", "118.png", "E661", "E646", "", "Part0","{B8257891-025A-49ab-9C91-FEBE4819DF0B}");
+tocTab[tocTab.length] = new Array("0.1.1.1:10", "", "hasMeasurement", "EARoot/EA1/EA1/EA1/EA55.html", "118.png", "E667", "E646", "", "Part0","{EBEA08AC-BADA-4490-AD18-28DBDE30118E}");
+tocTab[tocTab.length] = new Array("0.1.1.1:11", "", "«participantProperty» ", "EARoot/EA1/EA1/EA1/EA56.html", "118.png", "E648", "E647", "", "Part0","{327E7BCB-39EE-4bc1-A658-07ABBCDC66A8}");
+tocTab[tocTab.length] = new Array("0.1.1.1:12", "", "«participantProperty» ", "EARoot/EA1/EA1/EA1/EA57.html", "118.png", "E649", "E647", "", "Part0","{DED5A27A-9C95-4f51-8048-F412C4D56E92}");
+tocTab[tocTab.length] = new Array("0.1.1.1.1", "1", "CuttingItemMeasurementSubTypes", "EARoot/EA1/EA1/EA1/EA1/EA60.html", "4.png", "", "", "{E5ED7098-F118-42d2-B1B7-451EC522E165}", "Package");

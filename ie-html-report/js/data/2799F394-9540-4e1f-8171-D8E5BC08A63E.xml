@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.1.3.2:1", "", "SensorConfiguration", "EARoot/EA3/EA1/EA3/EA2/EA291.html", "175.png", "58", "0", "", "Logical diagram0","{29FCB30D-2C41-4c40-A9AF-B1FBE92B1D37}");
+tocTab[tocTab.length] = new Array("0.3.1.3.2:2", "", "«block» Channel", "EARoot/EA3/EA1/EA3/EA2/EA294.html", "5.png", "E576", "0", "", "Class0","{82C852E8-47AD-4b8c-804D-F38FCA663918}");
+tocTab[tocTab.length] = new Array("0.3.1.3.2:3", "", "«block» SensorConfiguration", "EARoot/EA3/EA1/EA3/EA2/EA295.html", "5.png", "E316", "0", "", "Class0","{1DD02014-D949-43cc-A79F-FF2C0AF0DFBE}");
+tocTab[tocTab.length] = new Array("0.3.1.3.2:4", "", "hasChannel", "EARoot/EA3/EA1/EA3/EA2/EA296.html", "118.png", "E577", "E316", "", "Part0","{54B4EB0F-B78D-45ee-9B05-428885182D2F}");

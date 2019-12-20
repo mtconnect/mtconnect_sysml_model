@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.6.2.2:1", "", "«block» Header", "EARoot/EA6/EA2/EA2/EA429.html", "5.png", "E116", "0", "", "Class0","{08B1605D-39B4-4475-A436-A457B1D646A2}");
+tocTab[tocTab.length] = new Array("0.6.2.2:2", "", "«block» MTConnectDevices", "EARoot/EA6/EA2/EA2/EA430.html", "5.png", "E115", "0", "", "Class0","{76BFE349-267B-45b3-B5FF-3C89D29AE715}");
+tocTab[tocTab.length] = new Array("0.6.2.2:3", "", "hasDevice", "EARoot/EA6/EA2/EA2/EA431.html", "118.png", "E149", "E115", "", "Part0","{8AE7DE47-CEAB-41bd-90DC-EC40367B4C86}");
+tocTab[tocTab.length] = new Array("0.6.2.2:4", "", "hasHeader", "EARoot/EA6/EA2/EA2/EA432.html", "118.png", "E610", "E115", "", "Part0","{9F6E44DB-2B61-493d-85CA-1A3449ED4D97}");

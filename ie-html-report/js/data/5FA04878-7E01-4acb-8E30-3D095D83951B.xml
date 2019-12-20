@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.3.2:1", "", "«block» Device", "EARoot/EA3/EA2/EA370.html", "5.png", "E125", "0", "", "Class0","{CA8CE60F-CB7A-44a7-AC56-08693534B482}");
+tocTab[tocTab.length] = new Array("0.3.2:2", "", "DataItems", "EARoot/EA3/EA2/EA371.html", "118.png", "E323", "E125", "", "Part0","{88E991B2-DA34-4341-AAA1-B5BC4EA1A384}");
+tocTab[tocTab.length] = new Array("0.3.2:3", "", "hasComponent", "EARoot/EA3/EA2/EA372.html", "118.png", "E362", "E125", "", "Part0","{3CD56C73-B00A-4534-992D-08DA80575448}");
+tocTab[tocTab.length] = new Array("0.3.2:4", "", "hasComposition", "EARoot/EA3/EA2/EA373.html", "118.png", "E360", "E125", "", "Part0","{036A63DD-7C46-4dc9-977A-404321632497}");
+tocTab[tocTab.length] = new Array("0.3.2:5", "", "hasConfiguration", "EARoot/EA3/EA2/EA374.html", "118.png", "E361", "E125", "", "Part0","{4374860E-05D1-4674-82F6-E137185AFE12}");
+tocTab[tocTab.length] = new Array("0.3.2:6", "", "hasDescription", "EARoot/EA3/EA2/EA375.html", "118.png", "E364", "E125", "", "Part0","{7803E912-D705-4176-BC4D-92BF22DBFDCE}");
+tocTab[tocTab.length] = new Array("0.3.2:7", "", "hasReference", "EARoot/EA3/EA2/EA376.html", "118.png", "E363", "E125", "", "Part0","{66297F03-7B49-4d56-9B65-5D7269CC112F}");
+tocTab[tocTab.length] = new Array("0.3.2:8", "", "observes", "EARoot/EA3/EA2/EA377.html", "118.png", "E359", "E125", "", "Part0","{2A903DC7-865A-480d-BAFC-FC2760996376}");
