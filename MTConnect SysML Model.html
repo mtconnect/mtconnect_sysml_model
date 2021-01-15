@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+
+
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="author" content="No Magic">
+   <meta name="description" content="Web Publisher 2.0">
+   <title>The MagicDraw Web Publisher 2.0</title>
+   <link rel="SHORTCUT ICON" href="MTConnect SysML Model_files/images/mdicon.ico">
+   <style type="text/css" media="screen">@import url("MTConnect SysML Model_files/css/stylesheet.css");</style>
+   <style type="text/css" media="print">@import url("MTConnect SysML Model_files/css/printstylesheet.css");</style>
+   <script type="text/javascript">var contextPath = 'MTConnect SysML Model_files/';</script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/magiccat.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/dialog.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/splitpane.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/web.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/tree.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/navigator.js"></script>
+   <script type="text/javascript" src="MTConnect SysML Model_files/js/tooltip.js"></script>
+</head>
+<body class="nm-content">
+<div class="nm-content" id="titlebar">
+   <form id="searchForm" class="nm-content" name="searchForm" action="" onsubmit="search(document.getElementById('searchText').value); return false;" style="display:inline">
+   <ul id="menubar" class="nm-content toolbar">
+      <li class="nm-content" style="float:left;"><a href ="MTConnect SysML Model.html" class="nm-content home"><img src="MTConnect SysML Model_files/images/mdicon.gif" width="16" height="16" alt="MagicDraw" style="border:none" class="nm-content">The MagicDraw Web Publisher 2.0</a></li>
+      <li class="nm-content" style="float:right;" id="quicksearch"><span class="nm-content" style="vertical-align:middle; font-size: 80%;" title="Search for element&lt;br&gt;Tip: Use regular expressions to search more precisely">QUICK SEARCH:</span> <input name="searchText" id="searchText" type="text" class="nm-content"></li>
+   </ul>
+   </form>
+</div>
+<div class="nm-content" id="container">
+   <table cellspacing="0" cellpadding="0" border="0" id="splitpane" class="nm-content splitpane" width="100%">
+      <tr class="nm-content">
+         <td id="splitpane-first" class="nm-content splitpane-first" style="min-width: 255px; width:20%;">
+          	<div id="tabs" style="text-align: left;" class="nm-content tabs">
+          		<ul class="nm-content tabheader">
+          			<li id="containment_tab" class="nm-content active" onclick="showContainmentTab()">Containment</li>
+          			<li id="diagrams_tab" class="nm-content" onclick="showDiagramsTab()">Diagrams</li>
+          			<li id="expand_icon" class="nm-content expandIcon"></li>
+          		</ul>
+          		<div id="containment_content" class="nm-content tabInner"></div>
+          		<div id="diagrams_content" class="nm-content tabInner" style="display:none"></div>
+          	</div>
+         </td>
+         <td class="nm-content splitpane-vdivider">&nbsp;</td>
+         <td id="splitpane-second" class="nm-content splitpane-second" style="min-width: 430px; width:80%;">
+            <div id="content" class="nm-content">
+               <div class="nm-content" style="position:absolute; padding-top:20%; padding-left: 10%;">
+                  <div class="nm-content" style="text-align: center"><img class="nm-content" src="MTConnect SysML Model_files/images/mdlogo.gif" width="450" height="80" alt="mdlogo"/></div>
+                  <h6 class="nm-content" style="text-align: right">Visit us at <a class="nm-content" href="http://www.nomagic.com" target="_blank">www.nomagic.com</a></h6>               </div>
+            </div>
+         </td>
+      </tr>
+   </table>
+</div>
+<script type="text/javascript">
+	function param(name)
+	{
+		var reg = new RegExp("[\\?&]"+name+"=([^&#]*)");
+		var results = reg.exec( window.location.href );
+		return results==null?"":results[1];
+	}
+
+	window.onload = function() {
+		/*  */
+		usecontextmenu = true;
+		/*  */
+		showappearsinpage = true;
+		/*  */
+		autonavigatehyperlink = true;
+		/*  */
+		displayelementid = true;
+		/*  */
+		displayelementnumber = false;
+		/*  */
+		gotoElementId = '';
+		/*  */
+		/* turn off to improve performance on very large report. */ 
+		/*   */
+		selecthistorynode = true;
+		/* Default value is true*/
+		/*   */
+		svgdiagramresizable = true;
+		/*   */
+		gotoLinkByIcon = false;
+		var refid = param('refid');
+		if (refid != '') {
+			gotoElementId=refid;
+		}
+		/*   */
+		XMLRequest.send('MTConnect SysML Model_files/xml/tree/root.xml', renderBrowser);
+	};     
+</script>
+</body>
+</html>
