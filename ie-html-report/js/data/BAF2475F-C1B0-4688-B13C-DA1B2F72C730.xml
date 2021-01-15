@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("0.6.2.3:1", "", "MTConnectErrors", "EARoot/EA6/EA2/EA3/EA433.html", "175.png", "88", "0", "", "Logical diagram0","{2422D9B1-7FD1-4b48-971B-E44FDE4FE1E3}");
-tocTab[tocTab.length] = new Array("0.6.2.3:2", "", "«block» Error", "EARoot/EA6/EA2/EA3/EA436.html", "5.png", "E1217", "0", "", "Class0","{D1AE9163-B234-4e39-B39D-84B3CDE460CA}");
-tocTab[tocTab.length] = new Array("0.6.2.3:3", "", "errorCodeValue", "EARoot/EA6/EA2/EA3/EA437.html", "247.png", "E1219", "0", "", "Enumeration0","{A9E31525-F599-4173-9BD1-6FB0D1AD88A3}");
-tocTab[tocTab.length] = new Array("0.6.2.3:4", "", "«block» Header", "EARoot/EA6/EA2/EA3/EA438.html", "5.png", "E1218", "0", "", "Class0","{88BFEE54-968C-4b57-903A-AC9F8E2C5660}");
-tocTab[tocTab.length] = new Array("0.6.2.3:5", "", "«block» MTConnectError", "EARoot/EA6/EA2/EA3/EA439.html", "5.png", "E1216", "0", "", "Class0","{B34745F2-DE34-4333-A82E-7ED78A942423}");
-tocTab[tocTab.length] = new Array("0.6.2.3:6", "", "hasError", "EARoot/EA6/EA2/EA3/EA440.html", "118.png", "E1221", "E1216", "", "Part0","{834C0348-4667-4b7a-B81C-88B3E60178FF}");
-tocTab[tocTab.length] = new Array("0.6.2.3:7", "", "hasHeader", "EARoot/EA6/EA2/EA3/EA441.html", "118.png", "E1220", "E1216", "", "Part0","{1D13CA5F-DBDD-4067-84BB-D172F933E6A5}");

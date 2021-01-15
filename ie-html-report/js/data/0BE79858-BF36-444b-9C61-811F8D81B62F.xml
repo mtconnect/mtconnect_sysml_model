@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("0.6.2.1:1", "", "«block» Header", "EARoot/EA6/EA2/EA1/EA424.html", "5.png", "E603", "0", "", "Class0","{B6A102D0-7CF7-495e-816A-17AC11572B70}");
-tocTab[tocTab.length] = new Array("0.6.2.1:2", "", "«block» MTConnectAssets", "EARoot/EA6/EA2/EA1/EA425.html", "5.png", "E602", "0", "", "Class0","{AD98C122-E276-4506-AD69-B82107CB3802}");
-tocTab[tocTab.length] = new Array("0.6.2.1:3", "", "hasAsset", "EARoot/EA6/EA2/EA1/EA426.html", "118.png", "E606", "E602", "", "Part0","{6199F312-2075-4041-A7D3-31B6171D31C5}");
-tocTab[tocTab.length] = new Array("0.6.2.1:4", "", "hasHeader", "EARoot/EA6/EA2/EA1/EA427.html", "118.png", "E609", "E602", "", "Part0","{D6538CE1-02A9-4c58-804C-24052D441386}");

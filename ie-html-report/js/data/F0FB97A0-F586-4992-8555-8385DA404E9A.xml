@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3:1", "", "MTConnectDevices", "EARoot/EA3/EA154.html", "175.png", "19", "0", "", "Logical diagram0","{19F9B9FB-079C-4f2e-AEE6-754BEC8C2B0A}");
-tocTab[tocTab.length] = new Array("0.3.1", "1", "Components", "EARoot/EA3/EA1/EA161.html", "4.png", "", "", "{6F87CB48-AFED-473f-92DF-E7AFDAFD3CAC}", "Package");
-tocTab[tocTab.length] = new Array("0.3.2", "1", "Devices", "EARoot/EA3/EA2/EA369.html", "4.png", "", "", "{5FA04878-7E01-4acb-8E30-3D095D83951B}", "Package");

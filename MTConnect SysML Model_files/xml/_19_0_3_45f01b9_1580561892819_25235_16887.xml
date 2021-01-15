@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" id="_19_0_3_45f01b9_1580561892819_25235_16887"><allGeneralClassifiers humanName="All General Classifiers"><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" name="Data Item" refid="_19_0_3_45f01b9_1580561892826_451624_16899"/><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" name="Metadata" refid="_19_0_3_45f01b9_1580561892873_743256_16977"/></allGeneralClassifiers><derivedExplanation humanName="Derived Explanation"/><documentation humanName="Documentation" mode="standard">
+	*ULHEADING:General meaning*:
+
+	An indicator of the health of a piece of equipment or a {term:Component} and its ability to function.
+
+	*ULHEADING:Used as a modeling element*:
+
+	A data modeling element used to organize and communicate information relative to the health of a piece of equipment or {term:Component}.
+
+	Appears in the documents in the following form: {term:Condition}.
+
+	*ULHEADING:Used in {term:Information Models}*:
+
+	An XML element used to represent {term:Condition} elements.
+
+    *BEGIN:itemize*
+	*ITEM* When used as an XML container to organize {term:Lower Level} {model:Condition} elements.
+
+	Appears in the documents in the following form: {model:Condition}.
+
+	*ITEM* When used as a {term:Lower Level} element, the form {model:Condition} is an abstract type XML element.  This {term:Lower Level} element is a {term:Data Entity}.  {model:Condition} is replaced in a data model by type of {term:Condition} element.
+
+	Appears in the documents in the following form: {model:Condition}.
+	*END:itemize*
+
+	*BEGIN:note*
+	Note: The form {model:Condition} is used to represent both above uses.
+	*END:note*
+</documentation><effectiveIRI humanName="Effective IRI">#Condition</effectiveIRI><generalization humanName="Generalization"><generalization classType="Generalization" humanType="Generalization" icon="MTConnect SysML Model_files/icon_generalization_779179975.png" isRelationship="true" refid="_19_0_3_45f01b9_1580574414009_881680_909"/></generalization><isAbstract humanName="Is Abstract" mode="s,e">false</isAbstract><isActive humanName="Is Active" mode="s,e">false</isActive><isFinalSpecialization humanName="Is Final Specialization" mode="e">false</isFinalSpecialization><isLeaf humanName="Is Leaf" mode="e">false</isLeaf><name humanName="Name" mode="s,e">Condition</name><namespace classType="Package" humanName="Namespace" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892820_559883_16888"/></ownedComment><ownedElement humanName="Owned Element"><generalization classType="Generalization" humanType="Generalization" icon="MTConnect SysML Model_files/icon_generalization_779179975.png" isRelationship="true" refid="_19_0_3_45f01b9_1580574414009_881680_909"/><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892820_559883_16888"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" mode="s,e" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><owningPackage classType="Package" humanName="Owning Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><package classType="Package" humanName="Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><qualifiedName humanName="Qualified Name" mode="e">Glossary::Condition</qualifiedName><superClass humanName="Super Class"><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" name="Data Item" refid="_19_0_3_45f01b9_1580561892826_451624_16899"/></superClass><TO_DO humanName="To Do" mode="s,e"/><visibility humanName="Visibility" mode="e">public</visibility><appearsIn><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_Concept Modeling Diagram_502125596.png" name="Glossary" refid="_19_0_3_45f01b9_1580561008381_914370_15272"/></appearsIn></class></magicdraw>

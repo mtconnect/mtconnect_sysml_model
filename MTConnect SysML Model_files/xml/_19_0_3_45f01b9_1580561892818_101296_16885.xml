@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" id="_19_0_3_45f01b9_1580561892818_101296_16885"><allGeneralClassifiers humanName="All General Classifiers"><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" name="Component" refid="_19_0_3_45f01b9_1580561892817_378950_16883"/></allGeneralClassifiers><derivedExplanation humanName="Derived Explanation"/><documentation humanName="Documentation" mode="standard">
+  *ULHEADING:General meaning*:
+
+  Data modeling elements that describe the lowest level basic structural or functional building blocks contained within a {model:Component} element.
+
+  Appears in the documents in the following form: {term:Composition}
+
+  *ULHEADING:Used in {term:Information Models}*:
+
+  A data modeling element used to organize the data being retrieved from a piece of equipment.
+
+  *BEGIN:itemize*
+      *ITEM* When used as an XML container to organize {model:Composition} elements. 
+      
+      Appears in the documents in the following form: {model:Compositions}
+      
+      *ITEM* When used as an abstract XML element. {model:Composition} is replaced in a data model by a type of {term:Composition} element. 
+      
+      Appears in the documents in the following form: {model:Composition}.
+  *END:itemize*
+</documentation><effectiveIRI humanName="Effective IRI">#Composition</effectiveIRI><generalization humanName="Generalization"><generalization classType="Generalization" humanType="Generalization" icon="MTConnect SysML Model_files/icon_generalization_779179975.png" isRelationship="true" refid="_19_0_3_45f01b9_1580576568339_40278_1841"/></generalization><isAbstract humanName="Is Abstract" mode="s,e">false</isAbstract><isActive humanName="Is Active" mode="s,e">false</isActive><isFinalSpecialization humanName="Is Final Specialization" mode="e">false</isFinalSpecialization><isLeaf humanName="Is Leaf" mode="e">false</isLeaf><name humanName="Name" mode="s,e">Composition</name><namespace classType="Package" humanName="Namespace" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892819_837446_16886"/></ownedComment><ownedElement humanName="Owned Element"><generalization classType="Generalization" humanType="Generalization" icon="MTConnect SysML Model_files/icon_generalization_779179975.png" isRelationship="true" refid="_19_0_3_45f01b9_1580576568339_40278_1841"/><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892819_837446_16886"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" mode="s,e" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><owningPackage classType="Package" humanName="Owning Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><package classType="Package" humanName="Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><qualifiedName humanName="Qualified Name" mode="e">Glossary::Composition</qualifiedName><superClass humanName="Super Class"><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" name="Component" refid="_19_0_3_45f01b9_1580561892817_378950_16883"/></superClass><TO_DO humanName="To Do" mode="s,e"/><visibility humanName="Visibility" mode="e">public</visibility><appearsIn><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_Concept Modeling Diagram_502125596.png" name="Glossary" refid="_19_0_3_45f01b9_1580561008381_914370_15272"/></appearsIn></class></magicdraw>

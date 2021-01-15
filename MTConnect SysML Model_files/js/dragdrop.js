@@ -1,0 +1,8 @@
+/**
+ * JS drag & drop framework
+ * Library require: animate.js, shadow.js
+ * @author Siri Chongasamethaworn (goonohc@gmail.com)
+ * @version 1.0 November 22, 2006
+ * @since November 22, 2006
+ */
+Library.load({'js/animate.js':['Graphics'],'js/shadow.js':['Shadow']});var DragDrop=function(aa){this.dragingObject;aa.dragdrop=this;this.MSIE=navigator.userAgent.indexOf('MSIE')>=0;if(window.dragdropObj==null){addEvent(document,'mousemove',this.acMouseMove);addEvent(document,'mouseup',this.acMouseUp);window.dragdropObj=this;} if(!this.MSIE){aa.dragdrop.mousedown=function(e){var ba=e?e:event;var ca=Graphics.mousePosition(ba);var da=Graphics.findPosition(this);this.offset={x:ca.x-da.x,y:ca.y-da.y};window.dragdropObj.dragingObject=this;};}};DragDrop.prototype={acMouseMove:function(e){var ea=window.dragdropObj.dragingObject;if(ea){var fa=Graphics.mousePosition(e?e:event);if(!ea.draging){Shadow.removeShadow(ea);ea.draging=true;} ea.style.top=(fa.y-ea.offset.y)+'px';ea.style.left=(fa.x-ea.offset.x)+'px';}},acMouseUp:function(e){var ga=window.dragdropObj.dragingObject;if(ga){if(ga.shadow!=false)Shadow.castShadow(ga);ga.draging=false;} window.dragdropObj.dragingObject=null;}};DragDrop.makeDragable=function(ha){if(!ha.dragdrop)new DragDrop(ha);if(window.dragdropObj.MSIE){ha.onmousedown=function(e){var ia=e?e:event;var ja=Graphics.mousePosition(ia);var ka=Graphics.findPosition(this);this.offset={x:ja.x-ka.x,y:ja.y-ka.y};window.dragdropObj.dragingObject=this;};} else{ha.addEventListener('mousedown',ha.dragdrop.mousedown,false)}};DragDrop.removeDragable=function(la){if(la.dragdrop)if(!window.dragdropObj.MSIE)la.removeEventListener('mousedown',la.dragdrop.mousedown,false);};
