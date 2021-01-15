@@ -1,3 +1,0 @@
-tocTab[tocTab.length] = new Array("0.6.1", "", "MQTT", "EARoot/EA6/EA1/EA417.html", "4.png", "", "", "{7BA0252E-7FDF-43b3-951A-F262B988EE9B}", "Package");
-tocTab[tocTab.length] = new Array("0.6.2", "1", "MTConnect", "EARoot/EA6/EA2/EA418.html", "4.png", "", "", "{50B7711E-30AA-4a94-9F73-C74061BA099D}", "Package");
-tocTab[tocTab.length] = new Array("0.6.3", "", "OPCUA", "EARoot/EA6/EA3/EA452.html", "4.png", "", "", "{E03B1A94-A5F9-4200-B48E-D781ADB541A3}", "Package");

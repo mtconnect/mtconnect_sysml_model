@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:1", "", "SampleType", "EARoot/EA3/EA1/EA4/EA1/EA3/EA353.html", "175.png", "48", "0", "", "Logical diagram0","{C4AD3521-1DDF-4ddb-A82D-C86A35AE8787}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:2", "", "«block» Acceleration", "EARoot/EA3/EA1/EA4/EA1/EA3/EA356.html", "5.png", "E375", "0", "", "Class0","{EEC433F6-B73A-4262-B0DF-D48A9E802610}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:3", "", "«block» AccumulatedTime", "EARoot/EA3/EA1/EA4/EA1/EA3/EA357.html", "5.png", "E377", "0", "", "Class0","{8145F349-D1C3-49b1-B068-E22543E0CCB6}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:4", "", "«block» ActualAmperage", "EARoot/EA3/EA1/EA4/EA1/EA3/EA358.html", "5.png", "E553", "0", "", "Class0","{8ADCB071-270C-4264-B853-986702E9CE8A}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:5", "", "«block» AlternatingAmperage", "EARoot/EA3/EA1/EA4/EA1/EA3/EA359.html", "5.png", "E554", "0", "", "Class0","{56988A3C-435E-41a4-804D-539E0F3A5962}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:6", "", "«block» Amperage", "EARoot/EA3/EA1/EA4/EA1/EA3/EA360.html", "5.png", "E552", "0", "", "Class0","{47EF18EA-DF74-4758-A840-E2E8CB28540F}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:7", "", "«block» DirectAmperage", "EARoot/EA3/EA1/EA4/EA1/EA3/EA361.html", "5.png", "E555", "0", "", "Class0","{919D2571-D42D-44c7-823A-61C54AC350B4}");
-tocTab[tocTab.length] = new Array("0.3.1.4.1.3:8", "", "«block» TargetAmperage", "EARoot/EA3/EA1/EA4/EA1/EA3/EA362.html", "5.png", "E556", "0", "", "Class0","{01DBA959-3C27-4b57-AD2F-395F71C8C04A}");

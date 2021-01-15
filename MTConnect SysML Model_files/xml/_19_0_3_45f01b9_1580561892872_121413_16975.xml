@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><class classType="Class" humanType="Class" icon="MTConnect SysML Model_files/icon_class_2034046523.png" id="_19_0_3_45f01b9_1580561892872_121413_16975"><derivedExplanation humanName="Derived Explanation"/><documentation humanName="Documentation" mode="standard">
+	*ULHEADING:General meaning*:
+
+	The content of a communication process.
+
+	Appears in the documents in the following form: message.
+
+	*ULHEADING:Used relative to an {term:Agent}*:
+
+	Describes the information that is exchanged between an {term:Agent} and a client software application.  A {term:Message} may contain either a {term:Request} from a client software application or a {term:Response} from an {term:Agent}.
+
+	Appears in the documents in the following form: {term:Message}.
+
+	*ULHEADING:Used as a type of {term:Data Entity}*:
+
+	Describes a type of {term:Data Entity} in the {term:Devices Information Model} that can contain any text string of information or native code to be transferred from a piece of equipment.
+
+	Appears in the documents in the following form: {model:MESSAGE}.
+
+	*ULHEADING:Used as an Element Name*:
+
+	An {term:Element Name} for a {term:Data Entity} in the {term:Streams Information Model} that can contain any text string of information or native code to be transferred from a piece of equipment.
+
+	Appears in the documents in the following form:  *GLSELEMENTNAME:message event*.
+</documentation><effectiveIRI humanName="Effective IRI">#Message</effectiveIRI><isAbstract humanName="Is Abstract" mode="s,e">false</isAbstract><isActive humanName="Is Active" mode="s,e">false</isActive><isFinalSpecialization humanName="Is Final Specialization" mode="e">false</isFinalSpecialization><isLeaf humanName="Is Leaf" mode="e">false</isLeaf><name humanName="Name" mode="s,e">Message</name><namespace classType="Package" humanName="Namespace" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892873_391000_16976"/></ownedComment><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1780197374.png" refid="_19_0_3_45f01b9_1580561892873_391000_16976"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" mode="s,e" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><owningPackage classType="Package" humanName="Owning Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><package classType="Package" humanName="Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_879292014.png" name="Glossary" refid="_19_0_3_45f01b9_1580560963999_142717_15271"/><qualifiedName humanName="Qualified Name" mode="e">Glossary::Message</qualifiedName><TO_DO humanName="To Do" mode="s,e"/><visibility humanName="Visibility" mode="e">public</visibility><appearsIn><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_Concept Modeling Diagram_502125596.png" name="Glossary" refid="_19_0_3_45f01b9_1580561008381_914370_15272"/></appearsIn></class></magicdraw>
