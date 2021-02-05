@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1985009646.png" id="_19_0_3_68e0225_1612421890078_40109_285"><annotatedElement humanName="Annotated Element" mode="s,e"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" refid="_19_0_3_68e0225_1612421838589_427569_281"/></annotatedElement><APPLIED_STEREOTYPES humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"/></APPLIED_STEREOTYPES><appliedStereotype humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"><property classType="Property" humanName="Annotation Property" humanType="Property" icon="MTConnect SysML Model_files/icon_property_370812363.png" name="annotationProperty" refid="_18_0_4_8d40284_1446637901611_333092_4293"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_370812363.png" name="base_Comment" refid="_18_0_4_8d40284_1446637851399_224264_4289"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_370812363.png" name="base_Comment" refid="_18_0_6_8d40284_1529075563218_973152_4714"/><property classType="Property" humanName="Datatype" humanType="Property" icon="MTConnect SysML Model_files/icon_property_370812363.png" name="datatype" refid="_18_0_6_8d40284_1525856815617_605073_4892"/><property classType="Property" humanName="Language" humanType="Property" icon="MTConnect SysML Model_files/icon_property_370812363.png" name="language" refid="_18_0_6_17770441_1521589781350_530230_4650"/></stereotype></appliedStereotype><appliedStereotypeInstance classType="InstanceSpecification" humanName="Applied Stereotype Instance" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1612421890090_52268_286"/><body humanName="Body" mode="s,e">\newpage 
+
+\subsection{XML Schema Diagrams}
+\label{sec:XML Schema Diagrams}
+
+\subsubsection{Assets Schema Diagrams}
+\label{sec:Assets Schema Diagrams}
+
+!Asset Schema.png!
+
+!Description Schema.png!
+
+\subsubsection{CuttingTool Schema Diagrams}
+\label{sec:CuttingTool Schema Diagrams}
+
+!CuttingTool Schema.png!
+
+!CuttingToolDefinition Schema.png!
+
+!CuttingToolArchetypeReference Schema.png!
+
+\subsubsection{CuttingToolLifeCycle Schema Diagrams}
+\label{sec:CuttingToolLifeCycle Schema Diagrams}
+
+!CuttingToolLifeCycle Schema.png!
+
+!CutterStatus Schema.png!
+
+!Location Schema.png!
+
+!Measurement Schema.png!
+
+!ProcessFeedRate Schema.png!
+
+!ProcessSpindleSpeed Schema.png!
+
+!ReconditionCount Schema.png!
+
+!ToolLife Schema.png!
+
+\subsubsection{CuttingItem Schema Diagrams}
+\label{sec:CuttingItem Schema Diagrams}
+
+!CuttingItems Schema.png!
+
+!CuttingItem Schema.png!
+
+!ItemLife Schema.png!
+
+\subsubsection{ISO 13399 Diagrams}
+\label{sec:ISO 13399 Diagrams}
+
+\paragraph{Measurement Diagrams}\mbox{}
+\label{sec:Measurement Diagrams}
+
+!Cutting Tool Measurement 3.png!
+
+!Cutting Tool Measurement 4.png!
+
+!Cutting Tool Measurement 5.png!
+
+!Cutting Tool Measurement 6.png!
+
+!Cutting Tool Measurement 7.png!
+
+!Cutting Tool Measurement 8.png!
+
+\subsubsection{Cutting Tool Examples}
+\label{sec:Cutting Tool Examples}
+
+\paragraph{Shell Mill}\mbox{}
+\label{sec:Shell Mill}
+
+!Shell Mill Side View.png!
+
+!Indexable Insert Measurements.png!
+
+\begin{lstlisting}[firstnumber=1,escapechar=|,% 
+caption={Example for Indexable Insert Measurements}, label={lst:indexable-insert-measurements}]
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;MTConnectAssets 
+xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2
+http://mtconnect.org/schemas/MTConnectAssets\_1.2.xsd"&gt;
+  &lt;Header creationTime="2011-05-11T13:55:22" 
+  assetBufferSize="1024" sender="localhost"
+  assetCount="2" version="1.2" instanceId="1234"/&gt;
+  &lt;Assets&gt;
+  &lt;CuttingTool serialNumber="1" toolId="KSSP300R4SD43L240" 
+  timestamp="2011-05-11T13:55:22" assetId="KSSP300R4SD43L240.1" 
+  manufacturers="KMT,Parlec"&gt;
+    &lt;CuttingToolLifeCycle&gt;
+    &lt;CutterStatus&gt;&lt;Status&gt;NEW&lt;/Status&gt;&lt;/CutterStatus&gt;
+    &lt;ProcessSpindleSpeed maximum="13300" 
+    nominal="605"&gt;10000&lt;/ProcessSpindleSpeed&gt;
+    &lt;ProcessFeedRate
+    nominal="9.22"&gt;9.22&lt;/ProcessSpindleSpeed&gt;
+    &lt;ConnectionCodeMachineSide&gt;CV50
+    &lt;/ConnectionCodeMachineSide&gt;
+    &lt;Measurements&gt;
+      &lt;BodyDiameterMax code="BDX"&gt;73.25
+      &lt;/BodyDiameterMax&gt;
+      &lt;OverallToolLength nominal="222.25" 
+        minimum="221.996" maximum="222.504" 
+        code="OAL"&gt;222.25&lt;/OverallToolLength&gt;
+      &lt;UsableLengthMax code="LUX" nominal="82.55"&gt;82.55
+      &lt;/UsableLengthMax&gt;
+      &lt;CuttingDiameterMax code="DC" nominal="76.2" 
+        maximum="76.213" minimum="76.187"&gt;76.2
+      &lt;/CuttingDiameterMax&gt;
+      &lt;BodyLengthMax code="LF" nominal="120.65" 
+        maximum="120.904" minimum="120.404"&gt;120.65
+      &lt;/BodyLengthMax&gt;
+      &lt;DepthOfCutMax code="APMX" 
+      nominal="60.96"&gt;60.95&lt;/DepthOfCutMax&gt;
+      &lt;FlangeDiameterMax code="DF" 
+        nominal="98.425"&gt;98.425&lt;/FlangeDiameterMax&gt;
+    &lt;/Measurements&gt;
+    &lt;CuttingItems count="24"&gt;
+      &lt;CuttingItem indices="1-24" itemId="SDET43PDER8GB" 
+        manufacturers="KMT" grade="KC725M"&gt;
+        &lt;Measurements&gt;
+          &lt;CuttingEdgeLength code="L" nominal="12.7" 
+            minimum="12.675" maximum="12.725"&gt;12.7
+          &lt;/CuttingEdgeLength&gt;
+        &lt;WiperEdgeLength code="BS" nominal=
+          "2.56"&gt;2.56&lt;/WiperEdgeLength&gt;
+        &lt;IncribedCircleDiameter code="IC"
+          nominal="12.7"&gt;12.7
+        &lt;/IncribedCircleDiameter&gt;
+        &lt;CornerRadius code="RE" nominal="0.8"&gt;
+          0.8&lt;/CornerRadius&gt;
+      &lt;/Measurements&gt;
+      &lt;/CuttingItem&gt;
+    &lt;/CuttingItems&gt;
+    &lt;/CuttingToolLifeCycle&gt;
+    &lt;/CuttingTool&gt;
+  &lt;/Assets&gt;
+&lt;/MTConnectAssets&gt;
+\end{lstlisting}
+
+\pagebreak
+
+\paragraph{Step Drill}\mbox{}
+\label{sec:Step Drill}
+
+!Step Mill Side View.png!
+
+\begin{lstlisting}[firstnumber=1,escapechar=|,% 
+caption={Example for Step Mill Side View}, label={lst:step-drill-side-view}]
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 
+http://mtconnect.org/schemas/MTConnectAssets\_1.2.xsd"&gt;
+  &lt;Header creationTime="2011-05-
+  11T13:55:22" assetBufferSize="1024" 
+  sender="localhost" assetCount="2" version="1.2" instanceId="1234"/&gt;
+  &lt;Assets&gt;
+    &lt;CuttingTool serialNumber="1 " toolId="B732A08500HP" 
+    timestamp="2011-05-11T13:55:22" assetId="B732A08500HP " 
+    manufacturers="KMT,Parlec"&gt;
+      &lt;Description&gt;
+        Step Drill - KMT, B732A08500HP Grade KC7315
+        Adapter - Parlec, C50-M12SF300-6
+      &lt;/Description&gt;
+      &lt;CuttingToolLifeCycle&gt;
+        &lt;CutterStatus&gt;&lt;Status&gt;NEW&lt;/Status&gt;&lt;/CutterStatus&gt;
+        &lt;ProcessSpindleSpeed nominal="5893"&gt;5893&lt;/ProcessSpindleSpeed&gt;
+        &lt;ProcessFeedRate nominal="2.5"&gt;2.5&lt;/ProcessFeedRate&gt;
+        &lt;ConnectionCodeMachineSide&gt;CV50 Taper&lt;/ConnectionCodeMachineSide&gt;
+        &lt;Measurements&gt;
+          &lt;BodyDiameterMax code="BDX"&gt;31.8&lt;/BodyDiameterMax&gt;
+          &lt;BodyLengthMax code="LBX" nominal="120.825" maximum="126.325" 
+          minimum="115.325"&gt;120.825&lt;/BodyLengthMax&gt;
+          &lt;ProtrudingLength code="LPR" nominal="155.75" maximum="161.25" 
+          minimum="150.26"&gt;155.75&lt;/ProtrudingLength&gt;
+          &lt;FlangeDiameterMax code="DF" 
+          nominal="98.425"&gt;98.425&lt;/FlangeDiameterMax&gt;
+          &lt;OverallToolLength nominal="257.35" minimum="251.85" 
+          maximum="262.85" code="OAL"&gt;257.35&lt;/OverallToolLength&gt;
+        &lt;/Measurements&gt;
+        &lt;CuttingItems count="2"&gt;
+          &lt;CuttingItem indices="1" manufacturers="KMT" grade="KC7315"&gt;&gt;
+            &lt;Measurements&gt;
+              &lt;CuttingDiameter code="DC1" nominal="8.5" maximum="8.521" 
+              minimum="8.506"&gt;8.5135&lt;/CuttingDiameter&gt;
+              &lt;StepIncludedAngle code="STA1" nominal="90" maximum="91" 
+              minimum="89"&gt;90&lt;/StepIncludedAngle&gt;
+              &lt;FunctionalLength code="LF1" nominal="154.286" 
+              minimum="148.786" 
+              maximum="159.786"&gt;154.286&lt;/FunctionalLength&gt;
+              &lt;StepDiameterLength code="SDL1" 
+              nominal="9"&gt;9&lt;/StepDiameterLength&gt;
+              &lt;PointAngle code="SIG" nominal="135" minimum="133" 
+              maximum="137"&gt;135&lt;/PointAngle&gt;
+            &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+          &lt;CuttingItem indices="2" manufacturers="KMT" grade="KC7315"&gt;&gt;
+            &lt;Measurements&gt;
+              &lt;CuttingDiameter code="DC2" nominal="12" maximum="12.011" 
+              minimum="12"&gt;12&lt;/CuttingDiameter&gt;
+              &lt;FunctionalLength code="LF2" nominal="122.493" 
+              maximum="127.993" 
+              minimum="116.993"&gt;122.493&lt;/FunctionalLength&gt;
+              &lt;StepDiameterLength code="SDL2" 
+              nominal="9"&gt;9&lt;/StepDiameterLength&gt;
+            &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+        &lt;/CuttingItems&gt;
+      &lt;/CuttingToolLifeCycle&gt;
+    &lt;/CuttingTool&gt;
+  &lt;/Assets&gt;
+&lt;/MTConnectAssets&gt;
+\end{lstlisting}
+
+\pagebreak
+
+\paragraph{Shell Mill with Individual Loci}\mbox{}
+\label{sec:Shell Mill with Individual Loci}
+
+!Shell Mill with Explicate Loci.png!
+
+\begin{lstlisting}[firstnumber=1,escapechar=|,% 
+caption={Example for Shell Mill with Explicate Loci}, label={lst:shell-mill-with-explicate-loci}]
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 
+http://mtconnect.org/schemas/MTConnectAssets\_1.2.xsd"&gt;
+  &lt;Header creationTime="2011-05-11T13:55:22" assetBufferSize="1024" 
+  sender="localhost" assetCount="2" version="1.2" instanceId="1234"/&gt;
+  &lt;Assets&gt;
+    &lt;CuttingTool serialNumber="1" toolId="KSSP300R4SD43L240" 
+    timestamp="2011-05-11T13:55:22" assetId="KSSP300R4SD43L240.1" 
+    manufacturers="KMT,Parlec"&gt;
+      &lt;Description&gt;Keyway: 55 degrees&lt;/Description&gt;
+      &lt;CuttingToolLifeCycle&gt;
+        &lt;CutterStatus&gt;&lt;Status&gt;NEW&lt;/Status&gt;&lt;/CutterStatus&gt;
+        &lt;Measurements&gt;
+          &lt;UsableLengthMax code="LUX" 
+          nominal="82.55"&gt;82.55&lt;/UsableLengthMax&gt;
+          &lt;CuttingDiameterMax code="DC" nominal="76.2" maximum="76.213" 
+          minimum="76.187"&gt;76.2&lt;/CuttingDiameterMax&gt;
+          &lt;DepthOfCutMax code="APMX" nominal="60.96"&gt;60.95&lt;/DepthOfCutMax&gt;
+        &lt;/Measurements&gt;
+        &lt;CuttingItems count="24"&gt;
+          &lt;CuttingItem indices="1" itemId="SDET43PDER8GB" 
+          manufacturers="KMT"&gt;
+            &lt;Locus&gt;FLUTE: 1, ROW: 1&lt;/Locus&gt;
+            &lt;Measurements&gt;
+             &lt;DriveAngle code="DRVA" nominal="55"&gt;55&lt;/DriveAngle&gt;
+           &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+          &lt;CuttingItem indices="2-24" itemId="SDET43PDER8GB" 
+          manufacturers="KMT"&gt;
+            &lt;Locus&gt;FLUTE: 2-4, ROW: 1; FLUTE: 1-4, ROW 2-6&lt;/Locus&gt;
+          &lt;/CuttingItem&gt;
+        &lt;/CuttingItems&gt;
+      &lt;/CuttingToolLifeCycle&gt;
+    &lt;/CuttingTool&gt;
+  &lt;/Assets&gt;
+&lt;/MTConnectAssets&gt;
+\end{lstlisting}
+
+\pagebreak
+
+\paragraph{Drill with Individual Loci}\mbox{}
+\label{sec:Drill with Individual Loci}
+
+!Step Drill with Explicate Loci.png!
+
+\begin{lstlisting}[firstnumber=1,escapechar=|,% 
+caption={Example for Step Drill with Explicate Loci}, label={lst:step-drill-with-explicate-loci}]
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 
+http://mtconnect.org/schemas/MTConnectAssets\_1.2.xsd"&gt;
+  &lt;Header creationTime="2011-05-11T13:55:22" assetBufferSize="1024" 
+  sender="localhost" assetCount="2" version="1.2" instanceId="1234"/&gt;
+  &lt;Assets&gt;
+    &lt;CuttingTool serialNumber="1" toolId="KSEM0781LD" 
+    timestamp="2011-05-11T13:55:22" assetId="KSEM0781LD.1" manufacturers="KMT"&gt;
+      &lt;CuttingToolLifeCycle&gt;
+        &lt;CutterStatus&gt;&lt;Status&gt;NEW&lt;/Status&gt;&lt;/CutterStatus&gt;
+        &lt;ConnectionCodeMachineSide&gt;HSK63A&lt;/ConnectionCodeMachineSide&gt;
+        &lt;Measurements&gt;
+          &lt;BodyDiameterMax code="BDX"&gt;52.75&lt;/BodyDiameterMax&gt;
+          &lt;OverallToolLength nominal="172.29" 
+          code="OAL"&gt;172.29&lt;/OverallToolLength&gt;
+          &lt;UsableLengthMax code="LUX" nominal="49"&gt;49&lt;/UsableLengthMax&gt;
+          &lt;FlangeDiameterMax code="DF" 
+          nominal="62.94"&gt;62.94&lt;/FlangeDiameterMax&gt;
+        &lt;/Measurements&gt;
+        &lt;CuttingItems count="3"&gt;
+          &lt;CuttingItem indices="1" itemId="KSEM0781LD" manufacturers="KMT" 
+          grade="KC7015"&gt;
+            &lt;Locus&gt;FLUTE: 1, ROW: 1&lt;/Locus&gt;
+            &lt;Measurements&gt;
+         &lt;FunctionalLength code="LF1" nominal="154.42"&gt;154.42&lt;/FunctionalLength&gt;
+         &lt;CuttingDiameter code="DC1" nominal="19.844"&gt;19.844&lt;/CuttingDiameter&gt;
+         &lt;PointAngle code="SIG" nominal="140"&gt;140&lt;/PointAngle&gt;
+         &lt;ToolCuttingEdgeAngle code="KAPR1" nominal="45"&gt;45&lt;/ToolCuttingEdgeAngle&gt;
+         &lt;StepDiameterLength code="SLD1" nominal="39.8"&gt;39.8&lt;/StepDiameterLength&gt;
+            &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+          &lt;CuttingItem indices="2-3" itemId="TPMT-21.52-FP" 
+          manufacturers="KMT" grade="KCM15"&gt;
+            &lt;Locus&gt;FLUTE: 1-2, ROW: 2&lt;/Locus&gt;
+            &lt;Measurements&gt;
+         &lt;FunctionalLength code="LF2" nominal="112.9"&gt;119.2&lt;/FunctionalLength&gt;
+         &lt;CuttingDiameter code="DC2" nominal="31"&gt;31&lt;/CuttingDiameter&gt;
+            &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+        &lt;/CuttingItems&gt;
+      &lt;/CuttingToolLifeCycle&gt;
+    &lt;/CuttingTool&gt;
+  &lt;/Assets&gt;
+&lt;/MTConnectAssets&gt;
+\end{lstlisting}
+
+\pagebreak
+
+\paragraph{Shell Mill with Different Inserts on First Row}\mbox{}
+\label{sec:Shell Mill with Different Inserts on First Row}
+
+!Shell Mill with Different Inserts on First Row.png!
+
+\begin{lstlisting}[firstnumber=1,escapechar=|,% 
+caption={Example for Shell Mill with Different Inserts on First Row}, label={lst:shell-mill-with-different-inserts-on-first-row}]
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns="urn:mtconnect.org:MTConnectAssets:1.2" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 
+http://mtconnect.org/schemas/MTConnectAssets\_1.2.xsd"&gt;
+  &lt;Header creationTime="2011-05-11T13:55:22" assetBufferSize="1024" 
+  sender="localhost" assetCount="2" version="1.2" instanceId="1234"/&gt;
+  &lt;Assets&gt;
+    &lt;CuttingTool serialNumber="1" toolId="XXX" timestamp="2011-05-11T13:55:22" 
+    assetId="XXX.1" manufacturers="KMT"&gt;
+      &lt;CuttingToolLifeCycle&gt;
+        &lt;CutterStatus&gt;&lt;Status&gt;NEW&lt;/Status&gt;&lt;/CutterStatus&gt;
+        &lt;Measurements&gt;
+          &lt;DepthOfCutMax code="APMX" nominal="47.8"&gt;47.8&lt;/DepthOfCutMax&gt;
+          &lt;CuttingDiameterMax code="DC" 
+          nominal="50.8"&gt;50.8&lt;/CuttingDiameterMax&gt;
+          &lt;UsableLengthMax code="LUX" 
+          nominal="78.74"&gt;78.74&lt;/UsableLengthMax&gt;
+        &lt;/Measurements&gt;
+        &lt;CuttingItems count="9"&gt;
+          &lt;CuttingItem indices="1-3" itemId="EDPT180564PDER-LD" 
+          manufacturers="KMT"&gt;
+            &lt;Locus&gt;FLUTE: 1-3, ROW: 1&lt;/Locus&gt;
+            &lt;Measurements&gt;
+              &lt;CornerRadius code="RE" nominal="6.25"&gt;6.35&lt;/CornerRadius&gt;
+            &lt;/Measurements&gt;
+          &lt;/CuttingItem&gt;
+          &lt;CuttingItem indices="4-9" itemId="EDPT180508PDER-LD" 
+          manufacturers="KMT"&gt;
+            &lt;Locus&gt;FLANGE: 1-4, ROW: 2-3&lt;/Locus&gt;
+          &lt;/CuttingItem&gt;
+        &lt;/CuttingItems&gt;
+      &lt;/CuttingToolLifeCycle&gt;
+    &lt;/CuttingTool&gt;
+  &lt;/Assets&gt;
+&lt;/MTConnectAssets&gt;
+\end{lstlisting}
+
+
+\subsubsection{File Schema Diagrams}
+\label{sec:File Schema Diagrams}
+
+!AbstractFile Schema.png!
+
+!File Schema.png!</body><documentation humanName="Documentation"/><ownedElement humanName="Owned Element"><instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1612421890090_52268_286"/></ownedElement><owner classType="Comment" humanName="Owner" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" mode="s,e" refid="_19_0_3_68e0225_1612421838589_427569_281"/><owningElement classType="Comment" humanName="Owning Element" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" refid="_19_0_3_68e0225_1612421838589_427569_281"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>
