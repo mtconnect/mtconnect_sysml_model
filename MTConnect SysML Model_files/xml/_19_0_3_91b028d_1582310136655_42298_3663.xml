@@ -20,16 +20,16 @@ if(anglist.length &gt;= 2) {
     uy = parseFloat(vector.split(',')[1]);
     uz = parseFloat(vector.split(',')[2]);
 
-    outx = xt2*Math.cos(angle*Math.PI/180) + (uy*zt2 -uz*yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
-    outy = yt2*Math.cos(angle*Math.PI/180) + (uz*xt2 -ux*zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
-    outz = zt2*Math.cos(angle*Math.PI/180) + (ux*yt2 -uy*xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
+    outx = xt2*Math.cos(angle*Math.PI/180) + (uy**zt2 -uz**yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
+    outy = yt2*Math.cos(angle*Math.PI/180) + (uz**xt2 -ux**zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
+    outz = zt2*Math.cos(angle*Math.PI/180) + (ux**yt2 -uy**xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
     xt2 = outx
     yt2 = outy
     zt2 = outz
   
-    outux = xu2*Math.cos(angle*Math.PI/180) + (uy*zu2 -uz*yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
-    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz*xu2 -ux*zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
-    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux*yu2 -uy*xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
+    outux = xu2*Math.cos(angle*Math.PI/180) + (uy**zu2 -uz**yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
+    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz**xu2 -ux**zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
+    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux**yu2 -uy**xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
     xu2 = outux
     yu2 = outuy
     zu2 = outuz
@@ -74,16 +74,16 @@ if(anglist.length &gt;= 2) {
     uy = parseFloat(vector.split(',')[1]);
     uz = parseFloat(vector.split(',')[2]);
 
-    outx = xt2*Math.cos(angle*Math.PI/180) + (uy*zt2 -uz*yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
-    outy = yt2*Math.cos(angle*Math.PI/180) + (uz*xt2 -ux*zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
-    outz = zt2*Math.cos(angle*Math.PI/180) + (ux*yt2 -uy*xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
+    outx = xt2*Math.cos(angle*Math.PI/180) + (uy**zt2 -uz**yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
+    outy = yt2*Math.cos(angle*Math.PI/180) + (uz**xt2 -ux**zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
+    outz = zt2*Math.cos(angle*Math.PI/180) + (ux**yt2 -uy**xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
     xt2 = outx
     yt2 = outy
     zt2 = outz
   
-    outux = xu2*Math.cos(angle*Math.PI/180) + (uy*zu2 -uz*yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
-    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz*xu2 -ux*zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
-    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux*yu2 -uy*xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
+    outux = xu2*Math.cos(angle*Math.PI/180) + (uy**zu2 -uz**yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
+    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz**xu2 -ux**zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
+    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux**yu2 -uy**xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
     xu2 = outux
     yu2 = outuy
     zu2 = outuz

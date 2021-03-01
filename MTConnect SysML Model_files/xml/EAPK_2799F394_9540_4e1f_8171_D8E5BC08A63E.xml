@@ -1,138 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><package classType="Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" id="EAPK_2799F394_9540_4e1f_8171_D8E5BC08A63E"><documentation humanName="Documentation" mode="standard">\gls{sensor term} is a unique type of a piece of equipment.  A \gls{sensor term} is typically comprised of two major components: a \gls{sensor unit} that provides signal processing, conversion, and communications and the \glspl{sensing element} that provides a signal or measured value.
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><package classType="Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" id="EAPK_2799F394_9540_4e1f_8171_D8E5BC08A63E"><documentation humanName="Documentation" mode="standard">{{term(Sensor)}} is a unique type of a piece of equipment.  A {{term(Sensor)}} is typically comprised of two major components: a {{term(sensor unit)}} that provides signal processing, conversion, and communications and the {{termplural(sensing element)}} that provides a signal or measured value.
 
-The \gls{sensor unit} is modeled as a \gls{lower level} \gls{component} called \gls{sensor}.  The \gls{sensing element} may be modeled as a \gls{composition} element of a \gls{sensor} element and the measured value would be modeled as a \gls{dataitem} (See \sect{Listing of Data Items} for more information on \gls{dataitem} elements).  Each \gls{sensor unit} may have multiple \glspl{sensing element}; each representing the data for a variety of measured values.
+The {{term(sensor unit)}} is modeled as a {{term(Lower Level)}} {{block(Component)}} called {{block(Sensor)}}.  The {{term(sensing element)}} may be modeled as a {{block(Composition)}} element of a {{block(Sensor)}} element and the measured value would be modeled as a {{block(DataItem)}} (See {{sect(DataItems)}} for more information on {{block(DataItem)}} elements).  Each {{term(sensor unit)}} may have multiple {{termplural(sensing element)}}; each representing the data for a variety of measured values.
 
-Example:  A pressure transducer could be modeled as a \gls{sensor} (\gls{component}) with a \gls{name} = \textit{Pressure Transducer B} and its measured value could be modeled as a \gls{pressure sample} type \gls{dataitem}.
+When a {{term(sensor unit)}} is modeled as a {{block(Component)}} or as a separate piece of equipment, it may provide additional configuration information for the {{termplural(sensor element)}} and the {{term(sensor unit)}} itself.  
 
-While a \gls{sensor term} may be modeled in the \gls{xml} document in different ways, it will always be modeled to associate the information measured by each \gls{sensor element} with the \gls{structural element} to which the measured value is most closely associated.   
+{{block(Configuration)}} data provides information required for maintenance and support of the sensor.
 
-\subsubsection{Sensor Data}
+When {{block(Sensor)}} represents the {{term(sensor unit)}} for multiple {{term(sensing element)}}(s), each sensing element is represented by a {{block(Channel)}}.   The {{term(sensor unit)}} itself and each {{block(Channel)}} representing one {{term(sensing element)}} **MAY** have its own configuration data.
 
-The most basic implementation of a sensor occurs when the \gls{sensing element} itself is not identified in the data model, but the data that is measured by the \gls{sensing element} is provided as a data item associated with a \gls{component}.  An example would be the measured value of the temperature of a spindle motor.  This would be represented as a \gls{dataitem} called \gls{temperature sample} that is associated with the \gls{rotary} type axis element called "C" as shown in \lst{example-of-sensing-element}:
+!SensorConfiguration.png!
 
-\newpage 
-
-\begin{lstlisting}[firstnumber=1,escapechar=|,%
-    caption={Example of Sensing Element provided as data item associated with a Component}, label={lst:example-of-sensing-element}]
-&lt;Components&gt;
-    &lt;Axes
-        &lt;Components&gt;
-            &lt;Rotary id="c" name="C"&gt;
-                &lt;DataItems&gt;
-                    &lt;DataItem type="TEMPERATURE" 
-                        id="ctemp" category="SAMPLE" 
-                        name="Stemp" units="DEGREE"/&gt;
-                &lt;/DataItems&gt;
-            &lt;/Rotary&gt;
-        &lt;/Components&gt;
-    &lt;/Axes&gt;
-&lt;/Components&gt;
-\end{lstlisting}
-
-A sensor may measure values associated with any \gls{component} or \gls{device} element.   Some examples of how sensor data may be modeled are represented in \fig{sensor-data-associations}:
-
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=.75\textwidth]{figures/sensor-data-associations.png}
-  \caption{Sensor Data Associations}
-  \label{fig:sensor-data-associations}
-\end{figure}
-
-\subsubsection{Sensor Unit}
-\label{sec:Sensor Unit}
-
-A \gls{sensor unit} is an intelligent piece of equipment that manages the functions of one or more \glspl{sensing element}.
-
-Typical functions of the \gls{sensor unit} include:
-
-\begin{itemize}
-\item convert low level signals from the \glspl{sensing element} into data that can be used by other pieces of equipment.  (Example:  Convert a non-linear millivolt signal from a temperature sensor into a scaled temperature value that can be transmitted to another piece of equipment.)
-
-\item process \gls{sensing element} data into calculated values.  (Example:  temperature sensor data is converted into calculated values of average temperature, maximum temperature, minimum temperature, etc.)
-
-\item provide calibration and configuration information associated with each \gls{sensing element}
-
-\item monitor the health and integrity of the \glspl{sensing element} and the \gls{sensor unit}.  (Example:  The \gls{sensor unit} may provide diagnostics on each \gls{sensing element} (e.g., open wire detection) and itself (e.g., measure internal temperature of the \gls{sensor unit}).
-\end{itemize}
-
-Depending on how the \gls{sensor unit} is used, it may be considered as either an independent piece of equipment and modeled in the \gls{xml} document as a \gls{device}, or it may be modeled as a \gls{top level} \gls{component} called \gls{sensor} if it is integral to a piece of equipment.
-
-A \gls{sensor} \may have its own \gls{uuid} so it can be tracked throughout its lifetime.
-
-The following examples demonstrate how a \gls{sensor term} may be modeled in the \gls{xml} document differently based on how the \gls{sensor term} functions within the overall piece of equipment
-
-Example\#1:   If the \gls{sensor} provides vibration measurement data for the spindle on a piece of equipment, it could be modeled as a \gls{sensor} for rotary axis named C.
-
-\begin{lstlisting}[firstnumber=1,escapechar=|,%
-    caption={Example of Sensor for rotary axis}, label={lst:example-of-sensor}]
-&lt;Components&gt;
-  &lt;Axes
-    &lt;Components&gt;
-      &lt;Rotary id="c" name="C"&gt;
-        &lt;Components&gt;
-          &lt;Sensor id="spdlm" name="Spindlemonitor"&gt;
-            &lt;DataItems&gt;
-              &lt;DataItem type="DISPLACEMENT" id="cvib"
-                category="SAMPLE" name="Svib" 
-                units="MILLIMETER"/&gt;
-            &lt;/DataItems&gt;
-          &lt;/Sensor &gt;
-        &lt;Components&gt;
-      &lt;/Rotary&gt;
-    &lt;/Components&gt;
-  &lt;/Axes&gt;
-&lt;/Components&gt;
-\end{lstlisting}
-
-Example\#2:   If a \gls{sensor} provides measurement data for multiple \gls{component} elements within a piece of equipment and is not associated with any particular \gls{component} element, it \may be modeled in the \gls{xml} document as an independent \gls{lower level} \gls{component} and the data associated with measurements are associated with their associated \gls{component} elements.
-
-This example represents a \gls{sensor unit} with two \glspl{sensing element}, one measures spindle vibration and the other measures the temperature for the X axis.   The \gls{sensor unit} also has a \gls{sensing element} measuring the internal temperature of the \gls{sensor unit}.
-
-\begin{lstlisting}[firstnumber=1,escapechar=|,%
-    caption={Example of Sensor Unit with Sensing Element}, label={lst:example-of-sensor-with-sensing-elements}]
-&lt;Device id="d1" uuid="HM1" name="HMC_3Axis"&gt;
-  &lt;Description&gt;3 Axis Mill&lt;/Description&gt;
-  &lt;Components&gt;
-    &lt;Axes
-      &lt;Components&gt;
-        &lt;Sensor id="sens1" name="Sensorunit"&gt;
-          &lt;DataItems&gt;
-            &lt;DataItem type="TEMPERATURE" id="sentemp"
-              category="SAMPLE" name="Sensortemp" 
-              units="DEGREE"/&gt; 
-          &lt;/DataItems&gt;
-        &lt;/Sensor &gt;
-        &lt;Rotary id="c" name="C"&gt;
-          &lt;DataItems&gt;
-            &lt;DataItem type="DISPLACEMENT" id="cvib"
-              %category="SAMPLE" name="Svib" 
-              units="MILLIMETER"&gt;
-                &lt;Source componentId="sens1"/&gt;
-            &lt;DataItem/&gt;
-          &lt;/DataItems&gt;
-        &lt;/Rotary&gt;
-        &lt;Linear id="x" name="X"&gt;
-          &lt;DataItems&gt;
-            &lt;DataItem type="TEMPERATURE" id="xt" 
-              category="SAMPLE" name="Xtemp" 
-              units="DEGREE"&gt;
-                &lt;Source componentId="sens1"/&gt;
-            &lt;DataItem/&gt;
-          &lt;/DataItems&gt;
-        &lt;/Linear&gt;
-      &lt;Components&gt;
-    &lt;/Axes&gt;
-  &lt;/Components&gt;
-&lt;/Device&gt;
-\end{lstlisting}
-
-When a \gls{sensor} unit is modeled in the \gls{xml} document as a \gls{component} or as a separate piece of equipment, it may provide additional configuration information for the \glspl{sensor element} and the \gls{sensor unit} itself.  
-
-\gls{configuration} data provides information required for maintenance and support of the sensor.
-
-\gls{configuration} data is only available when the \gls{sensor} unit is modeled as a \gls{component} or a separate piece of equipment. For details on the modeling of configuration data in the \gls{xml} document, see \sect{Configuration for Component}.
-
-When \gls{sensor} represents the \gls{sensor unit} for multiple \gls{sensing element}(s), each sensing element is represented by a \gls{channel}.   The \gls{sensor unit} itself and each \gls{channel} representing one \gls{sensing element} \may have its own configuration data.
-
-\gls{sensorconfiguration} can contain any descriptive content for a \gls{sensor unit}.  This element is defined to contain mixed content and additional \gls{xml} elements (indicated by the \gls{any} element in \fig{sensorconfiguration-schema-diagram}) \may be added to extend the schema for \gls{sensorconfiguration}.
-</documentation><member humanName="Member"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></member><name humanName="Name" mode="s,e">Sensor</name><namespace classType="Package" humanName="Namespace" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><nestingPackage classType="Package" humanName="Nesting Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_91b028d_1589571772450_430276_27"/></ownedComment><ownedDiagram humanName="Owned Diagram"><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedDiagram><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_91b028d_1589571772450_430276_27"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedElement><ownedMember humanName="Owned Member"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedMember><ownedType humanName="Owned Type"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/></ownedType><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" mode="s,e" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><owningPackage classType="Package" humanName="Owning Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><packagedElement humanName="Packaged Element"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_1868126231.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/></packagedElement><qualifiedName humanName="Qualified Name" mode="e">Configuration::Sensor</qualifiedName><TO_DO humanName="To Do" mode="s,e"/><URI humanName="URI" mode="s,e"/><visibility humanName="Visibility">public</visibility></package></magicdraw>
+Note: See {{fig(SensorConfiguration Schema Diagram)}} for XML schema.
+</documentation><member humanName="Member"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></member><name humanName="Name" mode="s,e">Sensor</name><namespace classType="Package" humanName="Namespace" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><nestingPackage classType="Package" humanName="Nesting Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_91b028d_1589571772450_430276_27"/></ownedComment><ownedDiagram humanName="Owned Diagram"><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedDiagram><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_91b028d_1589571772450_430276_27"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedElement><ownedMember humanName="Owned Member"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/><diagram classType="Diagram" humanType="Diagram" icon="MTConnect SysML Model_files/icon_SysML Block Definition Diagram_2048589015.png" name="SensorConfiguration" refid="_19_0_3_91b028d_1579301239474_257259_7033"/></ownedMember><ownedType humanName="Owned Type"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/></ownedType><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" mode="s,e" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><owningPackage classType="Package" humanName="Owning Package" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Configuration" refid="_19_0_3_91b028d_1579526876433_244855_7626"/><packagedElement humanName="Packaged Element"><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="Channel" refid="EAID_82C852E8_47AD_4b8c_804D_F38FCA663918"/><association classType="Association" humanType="Association" icon="MTConnect SysML Model_files/icon_association_975179989.png" isRelationship="true" name="Channels" refid="EAID_9A1FD414_08E5_4c06_8E6A_D0FBEE71B296"/><block classType="Class" humanType="Block" icon="MTConnect SysML Model_files/icon_block_269694652.png" name="SensorConfiguration" refid="EAID_1DD02014_D949_43cc_A79F_FF2C0AF0DFBE"/></packagedElement><qualifiedName humanName="Qualified Name" mode="e">Configuration::Sensor</qualifiedName><TO_DO humanName="To Do" mode="s,e"/><URI humanName="URI" mode="s,e"/><visibility humanName="Visibility">public</visibility></package></magicdraw>

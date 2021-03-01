@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" id="_19_0_3_68e0225_1596109028613_18503_148"><APPLIED_STEREOTYPES humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"/></APPLIED_STEREOTYPES><appliedStereotype humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"><property classType="Property" humanName="Annotation Property" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="annotationProperty" refid="_18_0_4_8d40284_1446637901611_333092_4293"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_4_8d40284_1446637851399_224264_4289"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_6_8d40284_1529075563218_973152_4714"/><property classType="Property" humanName="Datatype" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="datatype" refid="_18_0_6_8d40284_1525856815617_605073_4892"/><property classType="Property" humanName="Language" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="language" refid="_18_0_6_17770441_1521589781350_530230_4650"/></stereotype></appliedStereotype><appliedStereotypeInstance classType="InstanceSpecification" humanName="Applied Stereotype Instance" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596109035256_421558_149"/><body humanName="Body" mode="s,e">MTConnect References</body><documentation humanName="Documentation" mode="standard">@manual{MTCPart1,
+  title = {{MTConnect Standard Part 1.0 - Overview and Fundamentals}},
+  %url = {http://bit.ly/2CaOlt1},
+  label = {MTConnect Part 1.0},
+  volume = {Part 1.0},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+
+@manual{MTCPart2,
+  title = {{MTConnect Standard: Part 2.0 - Devices Information Model}},
+  %url = {http://bit.ly/2OVfEy6},
+  label = {MTConnect Part 2.0},
+  volume = {Part 2.0},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+
+@manual{MTCPart3,
+  title = {{MTConnect Standard: Part 3.0 - Streams Information Model}},
+  %url = {http://bit.ly/2pMob8q},
+  label = {MTConnect Part 3.0},
+  volume = {Part 3.0},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+
+@manual{MTCPart40,
+  title = {{MTConnect Standard: Part 4.0 - Assets Information Model}},
+  %url = {http://bit.ly/2yyLc2D},
+  label = {MTConnect Part 4.0},
+  volume = {Part 4.0},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+  
+@manual{MTCPart41,
+  title = {{MTConnect Standard: Part 4.1 - Cutting Tools}},
+  %url = {http://bit.ly/2A5eDeN},
+  label = {MTConnect Part 4.1},
+  volume = {Part 4.1},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+
+@manual{MTCPart5,
+  title = {{MTConnect Standard: Part 5.0 - Interfaces}},
+  %url = {http://bit.ly/2pPNGFY},
+  label = {MTConnect Part 5.0},
+  volume = {Part 5.0},
+  version = {1.5.0},
+  keywords = {MTC}
+  }
+</documentation><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596109041624_521861_150"/></ownedComment><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596109041624_521861_150"/><instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596109035256_421558_149"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" mode="s,e" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><owningElement classType="Package" humanName="Owning Element" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

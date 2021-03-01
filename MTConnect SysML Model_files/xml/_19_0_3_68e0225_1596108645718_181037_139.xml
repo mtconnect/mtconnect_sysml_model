@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" id="_19_0_3_68e0225_1596108645718_181037_139"><APPLIED_STEREOTYPES humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"/></APPLIED_STEREOTYPES><appliedStereotype humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"><property classType="Property" humanName="Annotation Property" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="annotationProperty" refid="_18_0_4_8d40284_1446637901611_333092_4293"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_4_8d40284_1446637851399_224264_4289"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_6_8d40284_1529075563218_973152_4714"/><property classType="Property" humanName="Datatype" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="datatype" refid="_18_0_6_8d40284_1525856815617_605073_4892"/><property classType="Property" humanName="Language" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="language" refid="_18_0_6_17770441_1521589781350_530230_4650"/></stereotype></appliedStereotype><appliedStereotypeInstance classType="InstanceSpecification" humanName="Applied Stereotype Instance" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596108657020_859276_140"/><body humanName="Body" mode="s,e">Acronyms</body><documentation humanName="Documentation" mode="standard">% \newacronym[longplural={Frames per Second}]{tag}{ABRV}{Description}
+\newacronym[longplural={application programming interfaces}]{api}{API}{application programming interface}
+\newacronym[longplural={bills of materials}]{bom}{BOM}{bill of materials}
+\newacronym[longplural={designated-engineering representatives}]{der}{DER}{designated-engineering representative}
+\newacronym[longplural={digital manufacturing certificates}]{dmc}{DMC}{digital manufacturing certificate}
+\newacronym[longplural={small-to-medium enterprises}]{sme}{SME}{small-to-medium enterprise}
+%\newacronym[longplural={Uniform Resource Identifiers}]{uri}{URI}{Uniform Resource Identifier}
+\newacronym{2d}{2D}{two-dimensional}
+\newacronym{3d}{3D}{three-dimensional}
+\newacronym{ai}{AI}{artificial intelligence}
+\newacronym{alm}{ALM}{application lifecycle management}
+\newacronym{amt}{AMT}{The Association for Manufacturing Technology}
+\newacronym{ansi}{ANSI}{American National Standards Institute}
+\newacronym{ap}{AP}{Application Protocol}
+\newacronym{asme}{ASME}{American Society of Mechanical Engineers}
+\newacronym{astm}{ASTM}{American Society for Testing and Materials}
+\newacronym{aws}{AWS}{American Welding Society}
+\newacronym{bdd}{BDD}{block definition diagram}
+\newacronym{bst}{BST}{Board on Standardization and Testing}
+\newacronym{ca}{CA}{certificate authority}
+\newacronym{cad}{CAD}{computer-aided design}
+\newacronym{cae}{CAE}{computer-aided engineering}
+\newacronym{cai}{CAI}{computer-aided inspection}
+\newacronym{cam}{CAM}{computer-aided manufacturing}
+\newacronym{cax}{CAx}{computer-aided technologies}
+\newacronym{cfd}{CFD}{computational fluid dynamics}
+\newacronym{cm}{CM}{configuration management}
+\newacronym{cms}{CMS}{coordinate-measurement system}
+\newacronym{cnri}{CNRI}{Corporation for National Research Initiatives}
+\newacronym{cpm}{CPM}{Core Product Model}
+\newacronym{cpm2}{CPM2}{Revised Core Product Model}
+\newacronym{cpsc}{CPSC}{Consumer Product Safety Commission}
+\newacronym{cr}{C\&amp;R}{cause and remedy}
+\newacronym{cuav}{cUAV}{configurable unmanned aerial vehicle}
+\newacronym{darpa}{DARPA}{Defense Advanced Research Projects Agency}
+\newacronym{dfm}{DFM}{design for manufacturing}
+\newacronym{dla}{DLA}{Defense Logistics Agency}
+\newacronym{dmsc}{DMSC}{Dimensional Metrology Standards Consortium}
+\newacronym{dns}{DNS}{Domain Name System}
+\newacronym{dod}{DoD}{U.S. Department of Defense}
+\newacronym{doi}{DOI}{Distributed Object Identifier}
+\newacronym{drm}{DRM}{digital rights management}
+\newacronym{ecr}{ECR}{engineering change request}
+\newacronym{erp}{ERP}{enterprise resource planning}
+\newacronym{faa}{FAA}{Federal Aviation Administration}
+\newacronym{fair}{FAIR}{first article inspection reporting}
+\newacronym{fda}{FDA}{Food and Drug Administration}
+\newacronym{fea}{FEA}{finite-element analysis}
+\newacronym{gdt}{GD\&amp;T}{geometric dimensions and tolerances}
+\newacronym{gid}{GID}{global identifier}
+\newacronym{html}{HTML}{Hypertext Markup Language}
+%\newacronym{http}{HTTP}{Hypertext Transfer Protocol}
+\newacronym{https}{HTTPS}{Hypertext Transfer Protocol over Secure Sockets Layer}
+\newacronym{ieee}{IEEE}{Institute of Electrical and Electronics Engineers}
+\newacronym{iiot}{IIoT}{industrial internet of things}
+\newacronym{incose}{INCOSE}{International Council on Systems Engineering}
+\newacronym{io}{I/O}{in-out}
+\newacronym{ip}{IP}{intellectual property}
+\newacronym{iso}{ISO}{International Standards Organization}
+\newacronym{iss}{ISS}{International Space Station}
+\newacronym{it}{IT}{information technology}
+\newacronym{itu-t}{ITU-T}{Telecommunication Standardization Sector of the International Telecommunication Union}
+\newacronym{json}{JSON}{JavaScript Object Notation}
+\newacronym{jt}{JT}{Jupiter Tesselation}
+\newacronym{lhs}{LHS}{Lifecycle Handler System}
+\newacronym{lift}{LIFT}{Lifecycle Information Framework and Technology}
+\newacronym{loi}{LOI}{Lifecycle Object Identifier}
+\newacronym{mac}{MAC}{media access control}
+\newacronym{made}{MADE}{Manufacturing Automation and Design Engineering}
+\newacronym{mbd}{MBD}{model-based definition}
+\newacronym{mbe}{MBE}{Model-Based Enterprise}
+\newacronym{mbi}{MBI}{model-based inspection}
+\newacronym{mbm}{MBM}{model-based manufacturing}
+\newacronym{mbsd}{MBSD}{model-based standards development}
+\newacronym{mbse}{MBSE}{model-based systems engineering}
+\newacronym{medals}{MEDALS}{Military Engineering Data Asset Locator System}
+\newacronym{mes}{MES}{manufacturing execution system}
+\newacronym{moi}{MOI}{manufacturing object identifier}
+\newacronym{mtc}{MTC}{Manufacturing Technology Centre}
+\newacronym{nasa}{NASA}{National Aeronautics and Space Administration}
+\newacronym{nc}{NC}{numerical control}
+\newacronym{nist}{NIST}{National Institute of Standards and Technology}
+\newacronym{nnmi}{NNMI}{National Network of Manufacturing Innovation}
+\newacronym{nsf}{NSF}{National Science Foundation}
+\newacronym{ntsb}{NTSC}{National Transportation Safety Board}
+\newacronym{oasis}{OASIS}{Organization for the Advancement of Structured Information Standards}
+\newacronym{odi}{ODI}{Open Data Institute}
+\newacronym{oem}{OEM}{original equipment manufacturer}
+\newacronym{ooi}{OOI}{Ocean Observatories Initiative}
+\newacronym{oslc}{OSLC}{Open Services for Lifecycle Collaboration}
+\newacronym{ostp}{OSTP}{Office of Science and Technology Policy}
+\newacronym{ot}{OT}{operational technology}
+\newacronym{owl}{OWL}{Ontology Web Language}
+\newacronym{pdf}{PDF}{Portable Document Format}
+\newacronym{pdm}{PDM}{product-data management}
+\newacronym{pdq}{PDQ}{product-data quality}
+\newacronym{phm}{PHM}{prognosis and health monitoring}
+\newacronym{pi}{PI}{principal investigator}
+\newacronym{plcs}{PLCS}{Product Life Cycle Support}
+\newacronym{plm}{PLM}{product lifecycle management}
+\newacronym{plot}{PLOT}{product lifecycle of trust}
+\newacronym{pmi}{PMI}{product and manufacturing information}
+\newacronym{prc}{PRC}{Product Representation Compact}
+\newacronym{psi}{PSI}{Physical Science Informatics}
+\newacronym{ptab}{PTAB}{Primary Trustworthy Digital Repository Authorization Body Ltd.}
+\newacronym{qif}{QIF}{Quality Information Framework}
+\newacronym{qms}{QMS}{quality management system}
+\newacronym{rdf}{RDF}{Resource Description Framework}
+%\newacronym{rest}{REST}{Representational State Transfer}
+\newacronym{rii}{RII}{receiving and incoming inspection}
+\newacronym{saas}{SaaS}{software-as-a-service}
+\newacronym{saml}{SAML}{Security Assertion Markup Language}
+\newacronym{sc}{SC}{Standards Committee}
+\newacronym{sdo}{SDO}{Standards Development Organization}
+\newacronym{sftp}{SFTP}{Secure File Transfer Protocol}
+\newacronym{skos}{SKOS}{Simple Knowledge Organization System}
+\newacronym{slh}{SLH}{system lifecycle handler}
+\newacronym{slr}{SLR}{systematic literature review}
+\newacronym{smime}{S/MIME}{Secure/Multipurpose Internet Mail Extensions}
+\newacronym{smopac}{SMOPAC}{Smart Manufacturing Operations Planning and Control}
+\newacronym{sms}{SMS Test Bed}{Smart Manufacturing Systems Test Bed}
+\newacronym{soa}{SOA}{service-oriented architecture}
+\newacronym{spmm}{SPMM}{semantic-based product metamodel}
+\newacronym{ssl}{SSL}{Secure Sockets Layer}
+\newacronym{step}{STEP}{Standard for the Exchange of Product Model Data}
+\newacronym{step242}{STEP AP242}{Standard for the Exchange of Product Model Data Application Protocol 242}
+\newacronym{stl}{STL}{Stereolithography}
+\newacronym{sysml}{SysML}{Systems Modeling Language}
+\newacronym{tdp}{TDP}{technical data package}
+\newacronym{tls}{TLS}{Transport Layer Security}
+\newacronym{tsm}{TSM}{Total System Model}
+\newacronym{uml}{UML}{Unified Modeling Language}
+%UUID is defined in the standard and therefore included in mtc-terms.tex glossary
+%\newacronym{uuid}{UUID}{Universally Unique Identifier}
+\newacronym{vv}{V\&amp;V}{verification and validation}
+%\newacronym{w3c}{W3C}{World Wide Web Consortium}
+\newacronym{wsn}{WSN}{Wirth Syntax Notation}
+\newacronym{www}{WWW}{World Wide Web}
+%\newacronym{xml}{XML}{Extensible Markup Language}
+\newacronym{xpki}{X.509-PKI}{Public Key Infrastructure}
+\newacronym{xpmi}{X.509-PMI}{Privilege Management Infrastructure}
+\newacronym{xsd}{XSD}{XML Schema Definitions}
+
+\newacronym{opc}{OPC}{OLE for Process Control}
+\newacronym{ua}{UA}{Unified Architecture}
+\newacronym{ual}{UAL}{Unified Architecture Language}
+\newacronym{hmi}{HMI}{Human Machine Interface}
+\newacronym{plc}{PLC}{Programmable Logic Controller}
+\newacronym{scada}{SCADA}{Supervisory Control And Data Acquisition}
+\newacronym{tcpip}{TCP/IP}{Transmission Control Protocol/Internet Protocol}
+\newacronym{cnc}{CNC}{Computer Numerical Controller}
+
+
+\newacronym{mom}{MOM}{Message Orienged Middleware}
+\newacronym{pms}{PMS}{Production Management System}
+\newacronym{isv}{ISV}{Independent Software Vendor}
+\newacronym{mqtt}{MQTT}{Message Queuing Telemetry Transport}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "main"
+%%% End:
+</documentation><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596108670958_210489_141"/></ownedComment><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596108670958_210489_141"/><instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596108657020_859276_140"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" mode="s,e" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><owningElement classType="Package" humanName="Owning Element" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>
