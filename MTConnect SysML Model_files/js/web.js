@@ -317,7 +317,7 @@ function createChild(responseXML) {
 								relationUL = parentUL.firstChild.lastChild;
 							else {
 								var relationLI = addNode(parentUL, 'Relations', 'javascript:void(0);',
-									'MTConnect SysML Model_files/icon_Relationship_270157340.png', 'true');
+									'MTConnect SysML Model_files/icon_Relationship_1187748003.png', 'true');
 								relationLI.setAttribute('refid', 'relations');
 								relationUL = document.createElement('ul');
 								relationUL.className = 'nm-content';
