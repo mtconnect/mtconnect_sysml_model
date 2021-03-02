@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="MTConnect SysML Model_files/icon_opaqueexpression_592248663.png" id="_19_0_3_91b028d_1582310136655_42298_3663"><body humanName="Body" mode="e"><String>var outx,outy,outz,outux,outuy,outuz;
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><opaqueexpression classType="OpaqueExpression" humanType="Opaque Expression" icon="MTConnect SysML Model_files/icon_opaqueexpression_1195670735.png" id="_19_0_3_91b028d_1582310136655_42298_3663"><body humanName="Body" mode="e"><String>var outx,outy,outz,outux,outuy,outuz;
 var anglist = angin.split('|||');
 var ux,uy,uz,angle,vector;
 
@@ -20,16 +20,16 @@ if(anglist.length &gt;= 2) {
     uy = parseFloat(vector.split(',')[1]);
     uz = parseFloat(vector.split(',')[2]);
 
-    outx = xt2*Math.cos(angle*Math.PI/180) + (uy*zt2 -uz*yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
-    outy = yt2*Math.cos(angle*Math.PI/180) + (uz*xt2 -ux*zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
-    outz = zt2*Math.cos(angle*Math.PI/180) + (ux*yt2 -uy*xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
+    outx = xt2*Math.cos(angle*Math.PI/180) + (uy**zt2 -uz**yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
+    outy = yt2*Math.cos(angle*Math.PI/180) + (uz**xt2 -ux**zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
+    outz = zt2*Math.cos(angle*Math.PI/180) + (ux**yt2 -uy**xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
     xt2 = outx
     yt2 = outy
     zt2 = outz
   
-    outux = xu2*Math.cos(angle*Math.PI/180) + (uy*zu2 -uz*yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
-    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz*xu2 -ux*zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
-    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux*yu2 -uy*xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
+    outux = xu2*Math.cos(angle*Math.PI/180) + (uy**zu2 -uz**yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
+    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz**xu2 -ux**zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
+    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux**yu2 -uy**xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
     xu2 = outux
     yu2 = outuy
     zu2 = outuz
@@ -52,7 +52,7 @@ angles = angin + ang.toString()+'|'+xu2.toString()+ ','+yu2.toString()+ ','+zu2.
 angout = angles;                                                                                
 } else if(ang == 0){
 angout = angin;
-}</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>JavaScript</String></language><name humanName="Name"/><owner classType="Constraint" humanName="Owner" humanType="Constraint" icon="MTConnect SysML Model_files/icon_constraint_1241128308.png" mode="s,e" name="constraints" refid="_19_0_3_91b028d_1582310136654_639866_3662"/><owningConstraint classType="Constraint" humanName="Owning Constraint" humanType="Constraint" icon="MTConnect SysML Model_files/icon_constraint_1241128308.png" name="constraints" refid="_19_0_3_91b028d_1582310136654_639866_3662"/><qualifiedName humanName="Qualified Name">Simulation::Kinematics::Example::Definitions::Transformation::constraints::</qualifiedName><text humanName="Text" mode="standard">var outx,outy,outz,outux,outuy,outuz;
+}</String></body><documentation humanName="Documentation"/><language humanName="Language" mode="e"><String>JavaScript</String></language><name humanName="Name"/><owner classType="Constraint" humanName="Owner" humanType="Constraint" icon="MTConnect SysML Model_files/icon_constraint_1742235652.png" mode="s,e" name="constraints" refid="_19_0_3_91b028d_1582310136654_639866_3662"/><owningConstraint classType="Constraint" humanName="Owning Constraint" humanType="Constraint" icon="MTConnect SysML Model_files/icon_constraint_1742235652.png" name="constraints" refid="_19_0_3_91b028d_1582310136654_639866_3662"/><qualifiedName humanName="Qualified Name">Simulation::Kinematics::Example::Definitions::Transformation::constraints::</qualifiedName><text humanName="Text" mode="standard">var outx,outy,outz,outux,outuy,outuz;
 var anglist = angin.split('|||');
 var ux,uy,uz,angle,vector;
 
@@ -74,16 +74,16 @@ if(anglist.length &gt;= 2) {
     uy = parseFloat(vector.split(',')[1]);
     uz = parseFloat(vector.split(',')[2]);
 
-    outx = xt2*Math.cos(angle*Math.PI/180) + (uy*zt2 -uz*yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
-    outy = yt2*Math.cos(angle*Math.PI/180) + (uz*xt2 -ux*zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
-    outz = zt2*Math.cos(angle*Math.PI/180) + (ux*yt2 -uy*xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
+    outx = xt2*Math.cos(angle*Math.PI/180) + (uy**zt2 -uz**yt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*ux;
+    outy = yt2*Math.cos(angle*Math.PI/180) + (uz**xt2 -ux**zt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uy;
+    outz = zt2*Math.cos(angle*Math.PI/180) + (ux**yt2 -uy**xt2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xt2+uy*yt2+uz*zt2)*uz;
     xt2 = outx
     yt2 = outy
     zt2 = outz
   
-    outux = xu2*Math.cos(angle*Math.PI/180) + (uy*zu2 -uz*yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
-    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz*xu2 -ux*zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
-    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux*yu2 -uy*xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
+    outux = xu2*Math.cos(angle*Math.PI/180) + (uy**zu2 -uz**yu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*ux;
+    outuy = yu2*Math.cos(angle*Math.PI/180) + (uz**xu2 -ux**zu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uy;
+    outuz = zu2*Math.cos(angle*Math.PI/180) + (ux**yu2 -uy**xu2)*Math.sin(angle*Math.PI/180) + (1-Math.cos(angle*Math.PI/180))*(ux*xu2+uy*yu2+uz*zu2)*uz;
     xu2 = outux
     yu2 = outuy
     zu2 = outuz

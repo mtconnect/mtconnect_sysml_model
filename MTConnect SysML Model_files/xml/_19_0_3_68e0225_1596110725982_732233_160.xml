@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><magicdraw><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_1642577711.png" id="_19_0_3_68e0225_1596110725982_732233_160"><APPLIED_STEREOTYPES humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"/></APPLIED_STEREOTYPES><appliedStereotype humanName="Applied Stereotype" mode="s,e"><stereotype classType="Stereotype" humanType="Stereotype" icon="MTConnect SysML Model_files/icon_stereotype_1169894049.png" name="Literal Annotation" refid="_18_0_6_8d40284_1529075556359_481044_4712"><property classType="Property" humanName="Annotation Property" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="annotationProperty" refid="_18_0_4_8d40284_1446637901611_333092_4293"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_4_8d40284_1446637851399_224264_4289"/><property classType="Property" humanName="Base_ Comment" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="base_Comment" refid="_18_0_6_8d40284_1529075563218_973152_4714"/><property classType="Property" humanName="Datatype" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="datatype" refid="_18_0_6_8d40284_1525856815617_605073_4892"/><property classType="Property" humanName="Language" humanType="Property" icon="MTConnect SysML Model_files/icon_property_1366743023.png" name="language" refid="_18_0_6_17770441_1521589781350_530230_4650"/></stereotype></appliedStereotype><appliedStereotypeInstance classType="InstanceSpecification" humanName="Applied Stereotype Instance" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596110729779_666778_161"/><body humanName="Body" mode="s,e">Appendix</body><documentation humanName="Documentation" mode="standard">\appendix
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+\subsection{Bibliography}
+\label{Bibliography}
+
+Engineering Industries Association. \textit{EIA Standard - EIA-274-D}, Interchangeable Variable, Block Data Format for Positioning, Contouring, and Contouring/Positioning Numerically Controlled Machines. Washington, D.C. 1979.
+
+ISO TC 184/SC4/WG3 N1089. \textit{ISO/DIS 10303-238:} Industrial automation systems and integration  Product data representation and exchange  Part 238: Application Protocols: Application interpreted model for computerized numerical controllers. Geneva, Switzerland, 2004.
+
+International Organization for Standardization. \textit{ISO 14649:} Industrial automation systems and integration – Physical device control – Data model for computerized numerical controllers – Part 10: General process data. Geneva, Switzerland, 2004.
+
+International Organization for Standardization. \textit{ISO 14649:} Industrial automation systems and integration – Physical device control – Data model for computerized numerical controllers – Part 11: Process data for milling. Geneva, Switzerland, 2000.
+
+International Organization for Standardization. \textit{ISO 6983/1} – Numerical Control of machines – Program format and definition of address words – Part 1: Data format for positioning, line and contouring control systems. Geneva, Switzerland, 1982.
+
+Electronic Industries Association. \textit{ANSI/EIA-494-B-1992}, 32 Bit Binary CL (BCL) and 7 Bit ASCII CL (ACL) Exchange Input Format for Numerically Controlled Machines. Washington, D.C. 1992.
+
+National Aerospace Standard. \textit{Uniform Cutting Tests} - NAS Series: Metal Cutting Equipment Specifications. Washington, D.C. 1969.
+
+International Organization for Standardization. \textit{ISO 10303-11:} 1994, Industrial automation systems and integration  Product data representation and exchange  Part 11: Description methods: The EXPRESS language reference manual. Geneva, Switzerland, 1994.
+
+International Organization for Standardization. \textit{ISO 10303-21:} 1996, Industrial automation systems and integration -- Product data representation and exchange -- Part 21: Implementation methods: Clear text encoding of the exchange structure. Geneva, Switzerland, 1996.
+
+H.L. Horton, F.D. Jones, and E. Oberg. \textit{Machinery's Handbook}. Industrial Press, Inc. New York, 1984.
+
+International Organization for Standardization. \textit{ISO 841-2001:} Industrial automation systems and integration - Numerical control of machines - Coordinate systems and motion nomenclature. Geneva, Switzerland, 2001.
+
+ASME B5.57: \textit{Methods for Performance Evaluation of Computer Numerically Controlled Lathes and Turning Centers}, 1998.
+
+ASME/ANSI B5.54: \textit{Methods for Performance Evaluation of Computer Numerically Controlled Machining Centers}. 2005.
+
+OPC Foundation. \textit{OPC Unified Architecture Specification, Part 1: Concepts Version 1.00}. July 28, 2006.
+
+IEEE STD 1451.0-2007, \textit{Standard for a Smart Transducer Interface for Sensors and Actuators – Common Functions, Communication Protocols, and Transducer Electronic Data Sheet (TEDS) Formats, IEEE Instrumentation and Measurement Society, TC-9, The Institute of Electrical and Electronics Engineers, Inc., New York, N.Y. 10016, SH99684, October 5, 2007.}
+
+IEEE STD 1451.4-1994, Standard for a Smart Transducer Interface for Sensors and Actuators – Mixed-Mode Communication Protocols and Transducer Electronic Data Sheet (TEDS) Formats, IEEE Instrumentation and Measurement Society, TC-9, The Institute of Electrical and Electronics Engineers, Inc., New York, N.Y. 10016, SH95225, December 15, 2004. </documentation><ownedComment humanName="Owned Comment"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596110751046_415282_162"/></ownedComment><ownedElement humanName="Owned Element"><comment classType="Comment" humanType="Comment" icon="MTConnect SysML Model_files/icon_comment_692796401.png" refid="_19_0_3_68e0225_1596110751046_415282_162"/><instancespecification classType="InstanceSpecification" humanType="Instance Specification" icon="MTConnect SysML Model_files/icon_instancespecification_1004219512.png" name=" : Concept Modeling Profile::Literal Annotation" refid="_19_0_3_68e0225_1596110729779_666778_161"/></ownedElement><owner classType="Package" humanName="Owner" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" mode="s,e" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><owningElement classType="Package" humanName="Owning Element" humanType="Package" icon="MTConnect SysML Model_files/icon_package_1684615718.png" name="Common Documents" refid="_19_0_3_68e0225_1596108922525_351463_147"/><TO_DO humanName="To Do" mode="s,e"/></comment></magicdraw>

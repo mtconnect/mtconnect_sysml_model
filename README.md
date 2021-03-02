@@ -1,6 +1,6 @@
 # mtconnect-sysml-model
 
-MTConnect Information Model in SysML as per the MTConnect Standard Version 1.6.
+MTConnect Information Model in SysML as per the MTConnect Standard Version 1.7.
 
 MTConnect is a well-established semantic vocabulary for factory equipment. The information model for MTConnect is being documented in SysML to allow easier portability, faster deployment, and better integration and interoperability with other standards and protocols.
 
@@ -13,4 +13,4 @@ The model is available in four formats:
 
 # Getting Started
 
-Users should be familiar with MTConnect version 1.6 by browsing the complete MTConnect standard or by referring back to the standard while exploring the SysML model/XMI.
+Users should be familiar with MTConnect version 1.7 by browsing the complete MTConnect standard or by referring back to the standard while exploring the SysML model/XMI.
