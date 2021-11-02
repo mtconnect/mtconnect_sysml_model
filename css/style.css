@@ -1,0 +1,144 @@
+.x-grid-cell-inner 
+{
+  white-space: normal; /* changed from nowrap */
+}  
+
+#detailPanel_header
+{
+    background-color: #157fcc !important;
+    padding-top: 5px !important;
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+#titleLabel
+{
+    font-size: 18pt !important;
+    line-height: 30px !important;
+    color: white !important;
+}
+
+#pathLabel
+{
+    font-weight: normal !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    background: #157fcc !important;
+    background-color: #157fcc !important;
+    font-size: 12px !important;
+    background-color: #157fcc !important;   
+    color: white !important;
+}
+
+#pathLabel a
+{
+    color:white !important;
+    text-decoration: none !important;
+}
+
+.x-tool-img
+{
+    background-color: transparent !important;
+}
+
+.x-panel-header-text-default 
+{
+    color: #157fcc !important;    
+}
+
+#navigation-body
+{
+    background-color: #157fcc;
+}
+
+.x-mask-msg-text 
+{
+    padding-top: 31px;
+    background-image: url(../images/loader.png) !important;
+}
+
+.x-grid-cell-inner-treecolumn 
+{
+  white-space: nowrap !important;
+}
+
+.x-panel-header-text-default
+{
+    font-size: 15px !important;
+}
+
+.x-panel-header
+{
+    border-bottom: 2px solid #157fcc !important;
+    background-color: white !important;
+}
+
+.x-grid-cell
+{
+    font-size: 14px !important;
+} 
+
+.x-grid-row  .x-tree-icon-leaf 
+{
+    word-wrap: normal !important;
+    white-space: nowrap !important;
+}
+
+/*START css for search filter menu. id: #search_filter*/
+#search_filter-body
+{
+    background-color: #3892d3;
+}
+
+#search_filter-body .x-menu-item
+{
+    height: 41px;
+}
+
+#search_filter-body .x-menu-item-active
+{
+    background: #8AB8E6;
+    border-color: #8AB8E6;
+}
+
+#search_filter-body .x-menu-item-text
+{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-top: 10px;
+    color: white !important;
+}
+
+#search_filter-body .x-menu-item-icon
+{
+    height: 32px;
+    width: 32px;    
+}
+/*END css for search filter menu. id: #search_filter*/
+
+/*START search panel css*/
+.x-boundlist-item
+{
+    background-color: #3892d3 !important;
+    border-color: #3892d3 !important;
+    color: white !important;
+}
+
+.x-boundlist-item-over 
+{
+    background: #8AB8E6 !important;
+    border-color: #8AB8E6 !important;
+}
+/*END search panel css*/
+
+.x-header-text
+{
+    color : white;
+}
+
+#buttons_panel-body
+{
+    background-color: transparent;
+}
