@@ -4,12 +4,12 @@ window.resource = {
         tip1:
         {
             title: 'NAVIGATION TREE',
-            text: '<table border="0" style="margin-top: 10px"><tr><td valign="top"><img src="images/arrow-left.png" width="100px" style="background-color:#157fcc;"></td><td><p style="text-align:justify; font-family:helvetica, arial, verdana, sans-serif; font-size:15px"><b>Browse easily in navigation tree!</b></br></br>Select one of the icons to expand the navigation tree where you can easily access different views: requirements, architecture, implementation, diagrams and others. Select one of the listed items and its content will be displayed in the main content window.</p></td></tr></table>'
+            text: '<table border="0" style="margin-top: 10px"><tr><td valign="top"><img src="images/arrow-left.png" width="100px" style="background-color:#157fcc;"></td><td><p style="text-align:justify; font-family:helvetica, arial, verdana, sans-serif; font-size:15px"><b>Browse easily in navigation tree!</b></br></br>Click one of the icons to expand the navigation tree where you can easily access information about business processes, data objects, organization structure, and information systems.</br>Click one of the listed items and its content will be displayed in the main content window.</p></td></tr></table>'		
         },
         tip2:
         {
             title: 'SEARCH',
-            text: '<table border="0" style="margin-top: 10px"><tr><td><p style="text-align:justify; font-family:helvetica, arial, verdana, sans-serif; font-size:15px"><b>Use Quick Search to find any information you need!</b></br></br>Search requirements, architecture or other elements and diagrams by name or fragment. You can also search by  element or diagram type. The results will be shown as soon as you start typing. All views are filtered by default, but you can choose specific one. Enjoy quick search and locate information which you need.</p></td><td valign="top"><img src="images/arrow-right.png" height="100px" style="background-color:#157fcc;"></td></tr></table>'
+            text: '<table border="0" style="margin-top: 10px"><tr><td><p style="text-align:justify; font-family:helvetica, arial, verdana, sans-serif; font-size:15px"><b>Use Quick Search to find any information you need!</b></br></br>Search processes, data object or other elements by name. You can use wildcards to expand your search or use search filter to filter results.</p></td><td valign="top"><img src="images/arrow-right.png" height="100px" style="background-color:#157fcc;"></td></tr></table>'
         },
         tip3:
         {
@@ -25,15 +25,15 @@ window.resource = {
     quick_help :
     {
         title: 'QUICK START',
-        text: '<img src=\"images/quick_start.png\"></br><p style="text-align:center; font-family:helvetica, arial, verdana, sans-serif; font-size:15px">Software Engineering Portal</br>&#169; 2014 No Magic, Inc.</p>'
+        text: '<img src=\"images/quick_start.png\"></br><p style="text-align:center; font-family:helvetica, arial, verdana, sans-serif; font-size:15px">&#169; 2014 No Magic, Inc.</p>'
     },
     logo_panel :
     {
         logo : 
         {
             src : 'images/logo.png',
-            width: '205px',
-            height: '60px'
+            width: '125px',
+            height: '35px'
         },
         banner:
         {

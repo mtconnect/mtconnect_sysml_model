@@ -147,14 +147,14 @@ function createGridPanel(grid_panel_json)
             var columnWidth = columns[index].width;
             if (columnWidth === -1)
             {
-                tableWidth += 350;
+                tableWidth += 500;
             }
             else
             {
                 tableWidth += columnWidth;
             }
         }
-        return tableWidth;
+        return Math.max(tableWidth, window.innerWidth - 80);
     }
 
     var grid =  Ext.create('Ext.grid.Panel',
@@ -182,22 +182,37 @@ function createGridPanel(grid_panel_json)
                 overflowY: 'hidden'
             },
             items:[
-                {
-                    layout: 'fit'
-                },
-                grid
+              {
+                layout: 'fit'
+              },
+              grid,
+	      {
+                layout: 'fit',
+                style: { overflow: 'auto', paddingBottom: '20px' }
+	      }
             ]
         });
 
-    if (getColumnsCount(grid_panel_json.columns) > 4)
+  if (getColumnsCount(grid_panel_json.columns) > 2)
+  {
+    grid.setWidth(calculateTableWidth(grid_panel_json.columns));
+    gridPanelHolder.setHeight(Math.max(grid.getStore().getRange().length * 43 + 75, 180));
+    gridPanelHolder.setAutoScroll(true);    
+  }
+  else
+  {
+    if (grid.getStore().getRange().length == 1)
     {
-        grid.setWidth(calculateTableWidth(grid_panel_json.columns));
-        gridPanelHolder.setHeight(grid.getStore().getRange().length * 35 + 75);
-
-        gridPanelHolder.setAutoScroll(true);
+      gridPanelHolder.setHeight(75);
     }
-
-    return gridPanelHolder;
+    else
+    {
+      gridPanelHolder.setAutoScroll(true);    
+    }      
+  }
+  
+  
+  return gridPanelHolder;
 }
 
 function createGridPanels(json)
@@ -716,7 +731,6 @@ function createHelpButtonPanel()
                                       {
                                           id: 'helpPanel',
                                           itemId: 'helpPanel',
-                                          width: 85,
                                           layout: "hbox",
                                           bodyStyle: 'background:transparent;',
                                           autoRender: true,
@@ -803,15 +817,13 @@ function createHelpButtonPanel()
                             });
     }
 
-    var commentEnabled = "NA";
+    var commentEnabled = "";
 
     if(commentEnabled !== "" && commentEnabled!== "NA")
     {
         helpButtonPanel.add({
-                                xtype: 'image',
-                                src: 'images/mail_icon.png',
-                                width: imageWidth,
-                                height: imageHeight,
+                                xtype: 'button',
+                         	text: "Submit Comment",
                                 title: window.resource.help_panel.commentText,
                                 listeners: {
                                     render: function ()
@@ -910,7 +922,7 @@ function createCommentPanel()
 
                                                             $.ajax({
                                                                        type: "GET",
-                                                                       url: "NA",
+                                                                       url: "/cameo_comment",
                                                                        data: result[0],
                                                                        success: function()
                                                                        {
@@ -1007,10 +1019,10 @@ function showFeedbackIcon()
 //Default content pane
 window.contentPanel = createContentPanel
 ({
-  "title": "",
-  "html_panel": [],
-  "grid_panel": [],
-  "image_panel": []
+     "title": "",
+     "html_panel": [],
+     "grid_panel": [],
+     "image_panel": []
  });
 
 Ext.override(Ext.grid.View, { enableTextSelection: true });
