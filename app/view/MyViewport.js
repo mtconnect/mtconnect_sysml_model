@@ -817,7 +817,7 @@ function createHelpButtonPanel()
                             });
     }
 
-    var commentEnabled = "";
+    var commentEnabled = "/cameo_comment";
 
     if(commentEnabled !== "" && commentEnabled!== "NA")
     {
