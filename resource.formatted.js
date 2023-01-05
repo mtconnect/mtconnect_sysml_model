@@ -28,9 +28,14 @@ window.resource = {
       "height": "60px"
     },
     "banner": {
-      "src": "images/version_number.png",
-      "width": "249px",
+      "src": "images/process_portal.png",
+      "width": "224px",
       "height": "60px"
+    },
+    "version": {
+      "text": "V2.1",
+      "height": "60px",
+      "width": "100px"
     }
   },
   "search_panel": {
