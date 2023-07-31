@@ -817,7 +817,7 @@ function createHelpButtonPanel()
                             });
     }
 
-    var commentEnabled = "NA";
+    var commentEnabled = "/cameo_comment";
 
     if(commentEnabled !== "" && commentEnabled!== "NA")
     {
@@ -1170,7 +1170,7 @@ function createLogoPanel()
         background: 'transparent',
         fontSize: '40px',
         color: '#58595B',
-        margin: '5px 7px',
+        margin: '10px 7px',
         cursor: 'pointer'
       },
       listeners:

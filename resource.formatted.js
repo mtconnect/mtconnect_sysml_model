@@ -24,8 +24,8 @@ window.resource = {
   "logo_panel": {
     "logo": {
       "src": "images/logo.png",
-      "width": "205px",
-      "height": "60px"
+      "width": 205,
+      "height": 60
     },
     "banner": {
       "src": "images/process_portal.png",
@@ -33,9 +33,9 @@ window.resource = {
       "height": "60px"
     },
     "version": {
-      "text": "V2.1",
-      "height": "60px",
-      "width": "100px"
+      "text": "V2.2",
+      "height": 50,
+      "width": 100
     }
   },
   "search_panel": {
