@@ -33,7 +33,7 @@ window.resource = {
       "height": "60px"
     },
     "version": {
-      "text": "V2.2",
+      "text": "V2.3",
       "height": 50,
       "width": 100
     }
